@@ -1,0 +1,112 @@
+IMCData
+{
+	"mapname"  		"ins_wilderness_b6"		
+	"theatre" 		"THEATERTYPE_IRAQ" 	
+	"vmapname"		"ins_wilderness_b6"		
+	"timestamp"  		"00000000"  		
+	"mapoverview"  		"Terrorists have taken control of a small farming sector.  Marines must capture the objectives in order from a to c to remove the terrorist threat."
+
+	TeamOne  					
+	{
+		"type"  	"TEAM_USMC"   		
+		"numwaves" 	"40"			
+		"timewave" 	"5"			 
+		"objwaves" 	"5"			
+		"ewaves" 	"3"			
+
+
+		Squads		
+		{
+			"Squad"	"rifle"			
+			"Squad"	"sweapons"		
+		}
+	}
+
+	TeamTwo  					
+	{
+		"type"  	"TEAM_IRAQI"		
+		"numwaves" 	"-1"			
+		"timewave" 	"10"			 
+		"objwaves" 	"0"				
+		"ewaves" 	"0"			
+
+
+		Squads
+		{
+			"Squad"	"rifle"			
+			"Squad"	"sweapons"		
+		}
+	}
+
+	ObjectiveData 					
+	{
+		"objective 0"	 			
+		{
+			"phonetic" 	"y"		
+			"color"  	"IMCCOLOR_BLACK"
+		}
+	
+		"objective 1" 				
+		{
+			"phonetic" 	"a"
+			"color"  	"IMCCOLOR_YELLOW"
+		}
+
+		"objective 2" 				
+		{
+			"phonetic" 	"b"
+			"color"  	"IMCCOLOR_ORANGE"
+		}
+
+		"objective 3" 				
+		{
+			"phonetic" 	"c"
+			"color"  	"IMCCOLOR_RED"
+		}
+	}
+
+	ProfileData 					
+	{
+		"Push"  				
+		{
+			"gametype" 	"GAMETYPE_PUSH"		
+			"roundlength" 	"900"
+			"capturingfallback" "1"
+
+
+			 ObjectiveData 			
+			 {
+				"objective 0" 		
+				{
+					"teamstart" 	"TEAMSTART_ONE" 	
+					"startspawn"	"1"			
+					"hidden"	"1"			
+				}
+
+				"objective 1" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"5"			
+					"captime" 	"20"			
+					"startspawn"	"1"			
+ 				}
+
+				"objective 2" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"5"
+					"captime" 	"18"
+				}
+
+				"objective 3" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"5"
+					"captime" 	"15"
+					"mixedspawns"	"1"			
+				}
+
+			}
+		}
+	}
+}

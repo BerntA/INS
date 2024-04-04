@@ -1,0 +1,135 @@
+IMCData
+{
+	"mapname" 	"karbala_b4"
+	"vmapname" 	"ins_karbala_b4_defand"
+	"theatre" 	"THEATERTYPE_IRAQ"
+	"timestamp" 	"1067212800"
+	"mapoverview"  	"Insurgents have occupied a village in the Kurdish region of Iraq. This village sits atop a hill where the Insurgents have dug in, as discovered by satellite imagery. Marines have sent a task force into the area to clear the city of enemy presence and liberate their Kurdish allies. Modded by: Sven.degosson@gmail.com, Beta testers: Panda, Cheesy & Crialma"
+	"mapncolorf" 	"IMCCOLOR_YELLOW"
+	"mapncolorb" 	"IMCCOLOR_GREEN"
+
+	TeamOne
+	{
+		"type"  	"TEAM_USMC"
+	        "numwaves" 	"15"
+		"timewave" 	"10"
+		"objwaves" 	"5"
+		"ewaves"	"5"
+
+		Squads
+		{
+			"Squad"	"rifle"
+			"Squad"	"sweapons"
+		}
+	}
+
+	TeamTwo
+	{
+		"type"  	"TEAM_IRAQI"
+		"numwaves" 	"15"
+		"timewave" 	"10"
+		"ewaves"	"5"
+
+		Squads
+		{
+			"Squad"	"rifle"
+			"Squad"	"sweapons"
+		}
+	}
+
+	ObjectiveData
+	{
+		"usmcspawn"  //id 0
+		{
+			"phonetic" 	"z"
+			"color"  	"IMCCOLOR_BLACK"
+		}
+
+		"Humvee"  //id 1
+		{
+			"phonetic" 	"a"
+			"color" 	"IMCCOLOR_BLUE"
+		}
+
+		"Store" //id 2
+		{
+			"phonetic" 	"b"
+			"color"  	"IMCCOLOR_GREEN"
+		}
+
+		"House"  //id 3
+		{
+			"phonetic" 	"c"
+			"color"  	"IMCCOLOR_RED"
+		}
+
+		"Street" //id 4
+		{
+			"phonetic" 	"d"
+			"color"  	"IMCCOLOR_YELLOW"
+		}
+
+		"Buildings"  //id 5
+		{
+			"phonetic" 	"e"
+			"color"  	"IMCCOLOR_LIGHTGREEN"
+		}
+	}
+
+	ProfileData
+	{
+		"Push"
+		{
+			 "gametype" 		"GAMETYPE_PUSH"
+			 "roundlength" 		"900"
+			 "capturingfallback" 	"1"
+			 "colorcorrection" 	"sinjar"
+
+			 ObjectiveData
+			 {
+				"usmcspawn"
+				{
+   					"teamstart" 	"TEAMSTART_ONE"
+					"hidden" 	"2"
+					"startspawn"	"2"
+				}
+
+				"Humvee"
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"15"
+					"captime" 	"15"
+					"startspawn"	"2"
+				}
+
+				"Store"
+				{
+					"reqpercent" 	"15"
+   					"captime" 	"15"
+ 					"teamstart" 	"TEAMSTART_TWO"
+				}
+
+				"House"
+				{
+					"reqpercent" 	"15"
+   					"captime" 	"15"
+ 					"teamstart" 	"TEAMSTART_TWO"
+				}
+
+				"Street"
+				{
+					"reqpercent" 	"15"
+   					"captime" 	"15"
+ 					"teamstart" 	"TEAMSTART_TWO"
+ 				}
+
+				"Buildings"
+				{
+					"reqpercent" 	"15"
+   					"captime" 	"15"
+ 					"teamstart" 	"TEAMSTART_TWO"
+				}
+			}
+		}
+	}
+}

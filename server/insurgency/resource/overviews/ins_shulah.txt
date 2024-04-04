@@ -1,0 +1,9 @@
+"ins_shulah"
+{
+	"material"	"maps/overviews/ins_shulah"	
+	"pos_x"		"-2907"			
+	"pos_y"		"3304"			
+	"scale"		"5.1" 						
+	"zoom		"1.0"
+	"rotate"	"0"			
+}

@@ -1,0 +1,120 @@
+IMCData
+{
+	"mapname"		"Hillah"
+	"vmapname"		"ins_hillah"	
+	"theatre" 		"THEATERTYPE_IRAQ"
+	"timestamp"		"1067212800"
+	"mapoverview"		"Coalition Forces have received reports of a growing movement of resistance fighters in the city of Al-Hillah. Intelligence reports they are ready to strike. US Troops have been dispatched to investigate, and if needed, intervene to quell this uprising."
+	"mapncolorf"		"IMCCOLOR_YELLOW"
+	"mapncolorb"		"IMCCOLOR_GREEN"
+
+	TeamOne
+	{
+		"type"		"TEAM_USMC"
+		"numwaves"	"-1"
+		"ewaves"	"2"
+		"timewave"	"20"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	TeamTwo
+	{
+		"type"		"TEAM_IRAQI"
+		"numwaves"	"-1"
+		"ewaves"	"2"
+		"timewave"	"20"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	ObjectiveData
+	{
+		"West Zone"  //id 0
+		{
+			"phonetic"	"y"
+			"color"		"IMCCOLOR_BLUE"
+		}
+
+		"Bazar"  //id 1
+		{
+			"phonetic"	"a"
+			"color"		"IMCCOLOR_RED"
+		}
+
+		"Mall entrance" //id 2
+		{
+			"phonetic"	"b"
+			"color"		"IMCCOLOR_BLUE"
+		}
+
+		"Terrace"  //id 3
+		{
+			"phonetic"	"c"
+			"color"		"IMCCOLOR_ORANGE"
+		}
+
+		"East Zone"  //id 4
+		{
+			"phonetic"	"z"
+			"color"		"IMCCOLOR_BLUE"
+		}
+	}
+
+    	ProfileData
+	{
+		"Firefight - Iraq"
+		{
+			"gametype"		"GAMETYPE_FIREFIGHT"
+			"roundlength"		"600"
+			"movingspawns"		"0"
+			"colorcorrection" 	"haditha"
+
+			ObjectiveData
+			{
+				"West Zone"
+				{
+					"teamstart"	"TEAMSTART_ONE"
+					"hidden"	"1"
+					"startspawn"	"1"
+				}
+
+				"Bazar"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"15"
+					"captime"	"15"
+				}
+
+				"Mall entrance"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"15"
+					"captime"	"15"
+				}
+
+                                "Terrace"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"15"
+					"captime"	"15"
+				}
+
+				"East Zone"
+				{
+					"teamstart"	"TEAMSTART_TWO"
+					"hidden"	"1"
+					"startspawn"	"1"
+				}
+			}
+		}
+	}
+}

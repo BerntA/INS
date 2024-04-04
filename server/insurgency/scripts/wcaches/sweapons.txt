@@ -1,0 +1,209 @@
+WeaponCacheData
+{
+	WeaponData
+	{
+		"TEAM_USMC"
+		{
+			Weapon
+			{
+				"name"		"WEAPON_M16A4"
+				"count"		"4"
+			}
+
+			Weapon
+			{
+				"name"		"WEAPON_M9"
+				"count"		"2"
+			}
+		}
+
+		"TEAM_IRAQI"
+		{
+			Weapon
+			{
+				"name"		"WEAPON_AK47"
+				"count"		"4"
+			}
+
+			Weapon
+			{
+				"name"		"WEAPON_SKS"
+				"count"		"2"
+			}
+
+			Weapon
+			{
+				"name"		"WEAPON_TOZ"
+				"count"		"2"
+			}
+
+			Weapon
+			{
+				"name"		"WEAPON_AKS74U"
+				"count"		"3"
+			}
+
+			Weapon
+			{
+				"name"		"WEAPON_FNFAL"
+				"count"		"3"
+			}
+
+			Weapon
+			{
+				"name"		"WEAPON_MAKAROV"
+				"count"		"3"
+			}
+
+			"Sniper"
+			{
+				Weapon
+				{
+					"name"		"WEAPON_L42A1"
+					"count"		"2"
+				}
+
+				Weapon
+				{
+					"name"		"WEAPON_SVD"
+					"count"		"1"
+				}
+
+				Weapon
+				{
+					"name"		"WEAPON_M14"
+					"count"		"1"
+				}
+			}
+		}
+	}
+
+	AmmoData
+	{
+		"TEAM_USMC"
+		{
+			Ammo
+			{
+				"name"		"AMMO_M406"
+				"count"		"12"
+				"class"		"Grenadier"
+			}
+
+			Ammo
+			{
+				"name"		"AMMO_C4"
+				"count"		"4"
+				"class"		"Engineer"
+			}
+		}
+
+		"TEAM_IRAQI"
+		{
+			Ammo
+			{
+				"name"		"AMMO_OG7V"
+				"count"		"6"
+				"class"		"RPG Gunner"
+			}
+
+			Ammo
+			{
+				"name"		"AMMO_C4"
+				"count"		"8"
+				"class"		"Sapper"
+			}
+		}
+	}
+
+	ClipData
+	{
+		"TEAM_USMC"
+		{
+			Clip
+			{
+				"name"		"CLIP_M16"
+				"count"		"5"
+			}
+
+			Clip
+			{
+				"name"		"CLIP_M249"
+				"count"		"5"
+				"class"		"Support"
+			}
+
+			Clip
+			{
+				"name"		"CLIP_M14"
+				"count"		"5"
+				"class"		"Marksman"
+			}
+
+			Clip
+			{
+				"name"		"BOX_M1014"
+				"count"		"5"
+				"class"		"Engineer"
+			}
+		}
+
+		"TEAM_IRAQI"
+		{
+			Clip
+			{
+				"name"		"CLIP_AK47"
+				"count"		"3"
+			}
+
+			Clip
+			{
+				"name"		"CLIP_SKS"
+				"count"		"2"
+			}
+
+			Clip
+			{
+				"name"		"CLIP_AKS74U"
+				"count"		"2"
+			}
+
+			Clip
+			{
+				"name"		"CLIP_RPK"
+				"count"		"2"
+				"class"		"Support"
+			}
+
+			Clip
+			{
+				"name"		"CLIP_UZI"
+				"count"		"2"
+			}
+
+			Clip
+			{
+				"name"		"CLIP_MAKAROV"
+				"count"		"2"
+			}
+
+			Clip
+			{
+				"name"		"CLIP_FNFAL"
+				"count"		"2"
+			}
+
+			Clip
+			{
+				"name"		"CLIP_L42A1"
+				"count"		"2"
+				"class"		"Sniper"
+			}
+
+			Clip
+			{
+				"name"		"BOX_TOZ"
+				"count"		"2"
+			}
+		}
+	}
+}

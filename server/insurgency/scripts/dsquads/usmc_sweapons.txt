@@ -1,0 +1,18 @@
+SquadData
+{
+	"name"		"Support Team"
+	"description"	"The support team's job is to support the assault team's advance. Armed with heavier firepower and special weapons, keep the enemy pinned down so the assault team can advance."
+
+	SlotData
+	{
+		"slot_one"	"Sergeant"
+		"slot_two"	"Rifleman"
+		"slot_three"	"Grenadier"
+		"slot_four"	"Marksman"
+
+		"slot_five"	"Sergeant"
+		"slot_six"	"Engineer"
+		"slot_seven"	"Grenadier"
+		"slot_eight"	"Marksman"
+	}
+}

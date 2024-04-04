@@ -1,0 +1,182 @@
+IMCData
+{	
+	"mapname"  		"BridgeCrossing"	//Name of the map.
+	"theatre" 		"THEATERTYPE_UNKNOWN" 	//Availeble options at this time, THEATERTYPE_UNKNOWN and THEATERTYPE_CROATIA,  THEATHERTYPE_AFGHANISTAN might be future additions.
+	"vmapname"		"ins_bridge"		//bsp mapname
+	"timestamp"  		"1402444800"  		//More info http://soft.zoneo.net/Unixtime/index.php.
+	"mapoverview"  		"An American supply convoy has unknowingly advanced a battle for control of this crucial bridge crossing which is currently under occupation by invading forces. The terrain surrounding this vital lynchpin proves difficult to navigate as both forces are required to use it's narrow road and gateways as a battlefield for supreme dominance. Map by tundra_cool -- www.phallus-palace.com"
+	"mapncolorf"		"IMCCOLOR_YELLOW"
+	"mapncolorb"		"IMCCOLOR_GREEN"
+
+	TeamOne  					//All settings for team 1.
+	{
+		"type"  	"TEAM_USMC"   		//or TEAM_Iraqi.
+		"numwaves" 	"-1"			//Reinforcements per squad (a value of '-1' means unlimited reinforcements).
+		"timewave" 	"15"			//Time between reinforcements. 
+		"objwaves" 	"0"			//The amount of extra reinforcement waves a team gains by capturing this objective.
+		"ewaves" 	"4"			//The amount of emergency waves the commander gets to call.
+
+
+		Squads		
+		{
+			"Squad"	"rifle"			//The different slot types can be found in scripts/dsquads/ script files.
+			"Squad"	"sweapons"		//The different slot types can be found in scripts/dsquads/ script files.
+		}
+	}
+
+	TeamTwo  					//All settings for team 2.
+	{
+		"type"  	"TEAM_IRAQI"		//or TEAM_USMC.
+		"numwaves" 	"-1"			//Reinforcements per squad (a value of '-1' means unlimited reinforcements).
+		"timewave" 	"15"			//Time between reinforcements. 
+		"objwaves" 	"0"			//The amount of extra reinforcement waves a team gains by capturing this objective.	
+		"ewaves" 	"4"			//The amount of emergency waves the commander gets to call.
+
+
+		Squads
+		{
+			"Squad"	"rifle"			//The different slot types can be found in scripts/dsquads/ script files.
+			"Squad"	"sweapons"		//The different slot types can be found in scripts/dsquads/ script files.
+		}
+	}
+
+	ObjectiveData 					//Lists all availeble objectives in this map.
+	{
+		"North Camp"	 			//objective id 0 
+		{
+			"phonetic" 	"y"		
+			"color"  	"IMCCOLOR_BLUE"
+		}
+
+		"North Building" 			//objective id 1
+		{
+			"phonetic" 	"a"
+			"color"  	"IMCCOLOR_ORANGE"
+		}
+
+		"Bridge Center" 			//objective id 2
+		{
+			"phonetic" 	"b"
+			"color"  	"IMCCOLOR_RED"
+		}
+
+		"South Building" 			//objective id 3
+		{
+			"phonetic" 	"c"
+			"color"  	"IMCCOLOR_BLACK"
+		}
+
+		"South Convoy" 				//objective id 3
+		{
+			"phonetic" 	"d"
+			"color"  	"IMCCOLOR_BLACK"
+		}
+	}
+
+	ProfileData 					// Lists the different gamemodes for this map, only support for battle in this example.
+	{
+		"Battle"  				
+		{
+			"gametype" 	"GAMETYPE_BATTLE"
+			"roundlength" 	"900"
+			// "capturingfallback" "1"
+
+
+
+			 ObjectiveData 			//Selection of the objectdata list thats used for this gamemode
+			 {
+				"North Camp" 	// Use the objective names you used above
+				{
+					"teamstart" 	"TEAMSTART_TWO" 	//What team controls this spawn at start.
+					"reqpercent" 	"20"
+					"captime" 	"15"
+					"startspawn"	"1"			//Battle requirement for the first objective.
+					"hidden"	"1"
+				}
+
+				"North Building" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"5"			//Percent of team players required to start a capture.
+					"captime" 	"15"			//Time in seconds to capture (capture bar resets if no players are in the capture zone.
+ 				}
+
+				"Bridge Center" 
+				{
+					"teamstart" 	"TEAMSTART_NEUTRAL"
+					"reqpercent" 	"20"
+					"captime" 	"15"
+				}
+
+				"South Building" 
+				{
+					"teamstart" 	"TEAMSTART_ONE"
+					"reqpercent" 	"20"
+					"captime" 	"15"
+				}
+
+				"South Convoy" 
+				{
+					"teamstart" 	"TEAMSTART_ONE"
+					"reqpercent" 	"20"
+					"captime" 	"15"
+					"startspawn"	"1"
+					"hidden"	"1"
+				}
+
+			}
+		}
+
+		"Push"  				
+		{
+			"gametype" 	"GAMETYPE_PUSH"
+			"roundlength" 	"900"
+			// "capturingfallback" "1"
+
+
+
+			 ObjectiveData 			//Selection of the objectdata list thats used for this gamemode
+			 {
+				"North Camp" 	// Use the objective names you used above
+				{
+					"teamstart" 	"TEAMSTART_TWO" 	//What team controls this spawn at start.
+					"reqpercent" 	"20"
+					"captime" 	"15"
+					"startspawn"	"1"			//Battle requirement for the first objective.
+					"hidden"	"1"
+				}
+
+				"North Building" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"5"			//Percent of team players required to start a capture.
+					"captime" 	"15"			//Time in seconds to capture (capture bar resets if no players are in the capture zone.
+ 				}
+
+				"Bridge Center" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"20"
+					"captime" 	"15"
+				}
+
+				"South Building" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"20"
+					"captime" 	"15"
+				}
+
+				"South Convoy" 
+				{
+					"teamstart" 	"TEAMSTART_ONE"
+					"reqpercent" 	"20"
+					"captime" 	"15"
+					"startspawn"	"1"
+					"hidden"	"1"
+				}
+
+			}
+		}
+	}
+}

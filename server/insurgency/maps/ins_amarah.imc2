@@ -1,0 +1,123 @@
+IMCData
+{
+	"mapname" 	"ins_Amarah"
+	"vmapname" 	"ins_amarah"
+	"theatre" 	"THEATERTYPE_IRAQ"
+	"timestamp" 	"1221850200"
+	"mapoverview"  	"A convoi of marines received a radio transmission from their HQ that an offshare US base is under attack. They were sent there to help them and to capture the near Insurgency trainingbase. The HQ declined to send more reinforcments to the battleground."
+
+
+	TeamOne
+	{
+		"type"  	"TEAM_USMC"
+		"numwaves" 	"20"
+		"objwaves" 	"10"
+		"ewaves"	"4"
+		"timewave" 	"10"
+
+		Squads
+		{
+			"Squad"	"rifle"
+			"Squad"	"sweapons"
+		}
+	}
+
+	TeamTwo
+	{
+		"type"  	"TEAM_IRAQI"
+		"numwaves" 	"-1"
+		"ewaves"	"0"
+		"timewave" 	"30"
+
+		Squads
+		{
+			"Squad"	"rifle"
+			"Squad"	"sweapons"
+		}
+	}
+
+	ObjectiveData
+	{
+		"Usmcspawn"  //id 0
+		{
+			"phonetic" 	"z"
+			"color"  	"IMCCOLOR_BLACK"
+		}
+
+		"Blackhawk Down"  //id 1
+		{
+			"phonetic" 	"a"
+			"color" 	"IMCCOLOR_BLUE"
+		}
+
+		"Bomb storage"  //id 2
+		{
+			"phonetic" 	"b"
+			"color"  	"IMCCOLOR_GREEN"
+		}
+
+		"Hideout"  //id 3
+		{
+			"phonetic" 	"c"
+			"color"  	"IMCCOLOR_RED"
+		}
+
+		"UsmcFort"  //id 4
+		{
+			"phonetic" 	"d"
+			"color"  	"IMCCOLOR_YELLOW"
+
+		}
+	}
+
+	ProfileData
+	{
+		"Push"
+		{
+			 "gametype" 		"GAMETYPE_PUSH"
+			 "roundlength" 		"900"
+			 "capturingfallback" 	"0"
+
+			 ObjectiveData
+			 {
+				"Usmcspawn"
+				{
+   					"teamstart" 	"TEAMSTART_ONE"
+					"hidden" 	"1"
+					"startspawn"	"1"
+				}
+
+				"Blackhawk Down"
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"15"
+					"captime" 	"15"
+					"startspawn"	"1"
+				}
+
+				"Bomb storage"
+				{
+					"reqpercent" 	"15"
+   					"captime" 	"15"
+ 					"teamstart" 	"TEAMSTART_TWO"
+				}
+
+				"Hideout"
+				{
+					"reqpercent" 	"15"
+   					"captime" 	"15"
+ 					"teamstart" 	"TEAMSTART_TWO"
+				}
+
+				"UsmcFort"
+				{
+					"reqpercent" 	"15"
+   					"captime" 	"15"
+ 					"teamstart" 	"TEAMSTART_TWO"
+					"mixedspawns"	"1"
+
+				}
+			}
+		}
+	}
+}

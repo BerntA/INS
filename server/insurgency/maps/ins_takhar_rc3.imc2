@@ -1,0 +1,134 @@
+IMCData
+{
+	"mapname"		"Takhar"
+	"vmapname"		"ins_takhar"	
+	"theatre" 		"THEATERTYPE_IRAQ"
+	"timestamp"		"89648"
+	"mapoverview"		"A Marine infantry platoon has been ordered to clear a remote, fortified insurgent mountain pass in the Takhar province of eastern Afghanistan. (Map created by Majoris - mikemajoris23@hotmail.com)"
+	"mapncolorf"		"IMCCOLOR_YELLOW"
+	"mapncolorb"		"IMCCOLOR_GREEN"
+
+	TeamOne
+	{
+		"type"		"TEAM_USMC"
+		"numwaves"		"-1"
+		"ewaves"		"2"
+		"timewave"		"15"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	TeamTwo
+	{
+		"type"		"TEAM_IRAQI"
+		"numwaves"		"-1"
+		"ewaves"		"2"
+		"timewave"		"15"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	ObjectiveData
+	{
+		"Spawn 1" 		
+		{
+			"phonetic"	"y"
+			"color"		"IMCCOLOR_RED"
+		}
+
+		"Bridge" 			
+		{
+			"phonetic"	"a"
+			"color"		"IMCCOLOR_RED"
+		}
+
+		"Cache Tunnel"	 		
+		{
+			"phonetic"	"b"
+			"color"		"IMCCOLOR_ORANGE"
+		}
+
+		"Northern Cave" 		
+		{
+			"phonetic"	"c"
+			"color"		"IMCCOLOR_BLUE"
+		}
+
+		"Docks" 		
+		{
+			"phonetic"	"d"
+			"color"		"IMCCOLOR_BLUE"
+		}
+
+		"Spawn 2" 			
+		{
+			"phonetic"	"z"
+			"color"		"IMCCOLOR_BLACK"
+		}
+
+	}
+
+	ProfileData		
+	{
+		"Firefight"
+		{
+			"gametype"			"GAMETYPE_FIREFIGHT"
+			"roundlength"			"600"
+			"movingspawns"			"0"
+			"colorcorrection"		"ramadifinal"
+
+			ObjectiveData
+			{
+				"Spawn 1"
+				{	
+					"teamstart"		"TEAMSTART_ONE"
+					"hidden"		"1"
+					"startspawn"	"1"
+				}
+
+				"Bridge"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"20"
+					"captime"		"15"
+				}
+
+				"Cache Tunnel"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"20"
+					"captime"		"20"
+				}
+
+				"Northern Cave"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"20"
+					"captime"		"15"
+				}
+
+				"Docks"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"20"
+					"captime"		"20"
+				}
+
+				"Spawn 2"
+				{
+					"teamstart"		"TEAMSTART_TWO"
+					"hidden"		"1"
+					"startspawn"	"1"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+SquadData
+{
+	"name"		"Assault Team"
+	"description"	"The assault team's job is to lead attacks on enemy objectives. Armed with light assault weapons, pave the way for the rest of your team's advance on the enemy."
+
+	SlotData
+	{
+		"slot_one"	"Sergeant"
+		"slot_two"	"Rifleman"
+		"slot_three"	"Rifleman"
+		"slot_four"	"Support"
+		"slot_five"	"Sergeant"
+		"slot_six"	"Rifleman"
+		"slot_seven"	"Rifleman"
+		"slot_eight"	"Support"
+	}
+}

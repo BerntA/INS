@@ -1,0 +1,36 @@
+PlayerClassData
+{
+	"name"		"RPG-7"
+	"desc"		"RPG lay down Heavy Support"
+	"filename"	"rpggn"
+
+	InventoryData
+	{
+		PrimaryWeapons
+		{
+			Weapon
+			{
+				"name"		"WEAPON_RPG7"
+				"ammocount"	"3"
+			}
+		}
+		SecondaryWeapons
+		{
+			Weapon
+			{
+				"name"		"WEAPON_MAKAROV"
+				"clips"		"5"
+			}
+		}
+		Equipment
+		{
+			Item
+			{
+				"name"		"ITEM_BANDAGE"
+				"count"		"1"
+			}
+
+
+		}
+	}
+}

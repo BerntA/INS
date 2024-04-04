@@ -1,0 +1,47 @@
+PlayerClassData
+{
+	"name"		"Sniper"
+	"desc"		"Insurgent snipers keep the US forces frightened at all times"
+	"filename"	"snpr"
+
+	InventoryData
+	{
+		PrimaryWeapons
+		{
+			Weapon
+			{
+				"name"		"WEAPON_SVD"
+				"clips"		"6"
+			}
+
+			Weapon
+			{
+				"name"		"WEAPON_L42A1"
+				"clips"		"6"
+			}
+
+		}
+
+		SecondaryWeapons
+		{
+			Weapon
+			{
+				"name"		"WEAPON_MAKAROV"
+				"clips"		"3"
+			}
+		}
+		Equipment
+		{
+			Item
+			{
+				"name"		"ITEM_M18"
+				"count"		"1"
+			}
+			Item
+			{
+				"name"		"ITEM_BANDAGE"
+				"count"		"1"
+			}
+		}
+	}
+}

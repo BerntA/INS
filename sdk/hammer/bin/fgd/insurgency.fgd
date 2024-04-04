@@ -1,0 +1,257 @@
+//-------------------------------------------------------------------------
+//
+// Insurgency FGD
+// Version 1.3
+//
+//-------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------
+//
+// Base Classes
+//
+//-------------------------------------------------------------------------
+
+@include "base.fgd"
+
+//-------------------------------------------------------------------------
+//
+// Point Classes
+//
+//-------------------------------------------------------------------------
+
+
+@PointClass = ins_gameinfo : "Misc Outputs for INS Games"
+[
+	output OnRoundReset(void) : "Fires when the Round Resets"
+]
+
+@PointClass = ins_profilemanager : "IMC Profile Manager"
+[
+	output OnProfile0(void) : "Fired when using IMC Profile 0"
+	output OnProfile1(void) : "Fired when using IMC Profile 1"
+	output OnProfile2(void) : "Fired when using IMC Profile 2"
+	output OnProfile3(void) : "Fired when using IMC Profile 3"
+	output OnProfile4(void) : "Fired when using IMC Profile 4"
+	output OnProfile5(void) : "Fired when using IMC Profile 5"
+	output OnProfile6(void) : "Fired when using IMC Profile 6"
+	output OnProfile7(void) : "Fired when using IMC Profile 7"
+]
+
+@PointClass base(PlayerClass, Angles) studio("models/editor/playerstart.mdl") = ins_spawnpoint : "Spawnpoint"
+[
+	parentobj(integer) : "Parent Objective" : 0 : "Which Objective this Spawnpoint Belongs Too"
+
+	spawngroup(integer) : "Spawn Group" : 0 : "The Spawn Group this Spawnpoint Belongs Too"
+
+	team(choices) :"Team" : 1 : "The Team which this Spawnpoint is Assigned" =
+	[
+		0 : "Mixed"
+		1 : "Team One"
+		2 : "Team Two"
+	]
+
+	squad(choices) : "Squad" : 0 : "The Squad which this Spawnpoint is Assigned" =
+	[
+		0 : "None"
+		1 : "Squad One"
+		2 : "Squad Two"
+	]
+
+	reinforcement(choices) : "Reinforcement" : 0 : "Specifies whether this Spawn should be used for Reinforcements" =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+
+	stance(choices) : "Spawn Stance" : 0 : "Specifies what Stance the Player has when they Spawn" = 
+	[
+		0 : "Standing"
+		1 : "Proned"
+	]
+]
+
+@PointClass base(Angles) size(-4 -4 -4, 4 4 4) color(0 180 0) = ins_viewpoint : "Viewpoint"
+[
+]
+
+@PointClass size(-4 -4 -4, 4 4 4) color(255 85 85) = ins_objmarker : "Display Marker for an Objective"
+[
+	parentobj(integer) : "Parent Objective" : 0
+]
+
+@PointClass base(prop_static_base) color(80 80 80) sphere(fademindist) sphere(fademaxdist) studioprop() = ins_weaponcache : "Weapon Cache"
+[
+	crateid(integer) : "Unique CreateID" : 0
+]
+
+@PointClass base(prop_static_base) color(80 80 80) sphere(fademindist) sphere(fademaxdist) studioprop() = ins_ammobox : "Ammo Box"
+[
+]
+
+//-------------------------------------------------------------------------
+//
+// Solid Classes
+//
+//-------------------------------------------------------------------------
+
+@SolidClass = func_ladder : 
+	"Ladder. Players will be able to freely along this brush, as if it was a ladder. If you are using a model prop " +
+	"for the visual representation of the ladder in the map, apply the toolsinvisibleladder material to the " +
+	"func_ladder brush."
+[
+]
+
+@SolidClass base(func_physbox) = func_physbox_multiplayer : 
+	"This class is the same as func_physbox, except the runtime collisions use a more bouncy method that avoids " +
+	"the prediction errors normal physics objects get."
+[
+]
+
+@SolidClass = ins_spawnprotection : "Spawn Protection"
+[
+	parentobj(integer) : "Parent Objective" : 0
+	team(choices) : "Team ID" : 0 : "Only block players from this team" =
+	[
+		0 : "All Teams"
+		1 : "Team One"
+		2 : "Team Two"
+	]
+]
+
+@SolidClass base(Trigger) = ins_trigger :
+	"A trigger that can be triggered by a specific team and/or squad"
+[
+	wait(integer) : "Delay Before Reset" : 1 : "Amount of time, in seconds, after the ins_trigger has triggered before it can be triggered again. If set to -1, it will never trigger again."
+	
+	team(choices) :"Team" : 1 : "The Team that can use this trigger" =
+	[
+		0 : "All Teams"
+		1 : "Team One"
+		2 : "Team Two"
+	]
+
+	squad(choices) : "Squad" : 0 : "The Squad that can use this trigger" =
+	[
+		0 : "All Squads"
+		1 : "Squad One"
+		2 : "Squad Two"
+	]
+	 
+	// Outputs
+	output OnTrigger(void) : "Fired whenever the trigger is activated."
+	input SetTeam(integer) : "Set the Team that can use this trigger"
+]
+
+@SolidClass = ins_objective : "Objective"
+[
+	mapid(integer) : "Unique MapID" : 0
+	radius(integer) : "Objective Radius" : 10
+
+	forceshow(choices) : "Draw Type" : 0 : "Draw Type of the Brush" =
+	[
+		0 : "Hide"
+		1 : "Show"
+	]
+
+	input Capture(integer) : "Capture the Objective"
+	output OnCapture(integer) : "Fired when Objective is Captured"
+	output OnTeam1Cap(void) : "Fired when Objective is Captured by Team 1"
+	output OnTeam2Cap(void) : "Fired when Objective is Captured by Team 2"
+]
+
+@SolidClass = ins_minefield : "Mine-Field"
+[
+]
+
+@SolidClass = ins_sniperzone : "Sniper-Zone"
+[
+]
+
+
+
+@SolidClass base(BreakableBrush, Targetname, Origin, RenderFields, Shadow) = ins_breakable : "INS Breakable Entity"
+[
+	_minlight(string) : "Minimum Light Level" : : "The minimum level of ambient light that hits this brush."
+
+	spawnflags(flags) =
+	[
+		4096  : "Ingore Bullet Damage" : 0
+		8192  : "Only Take Damage from an Engineer's Explosives" : 0
+	]
+]
+
+@SolidClass = ins_area : "Divides the Map into Named Areas"
+[
+	title(string) : "Name" : : "Name of the Area"
+]
+
+@SolidClass = ins_mantle : "Mantaling Zone - Ignore this Entity"
+[
+]
+
+@PointClass base(Angles) studio("models/effects/combineball.mdl") = ins_powerball : "Powerball"
+[
+]
+
+// EXTRA
+
+@BaseClass color(0 0 200) base(Targetname, Angles, Origin) = Weapon
+[
+	output OnPlayerUse(void) : "Fires when the player +uses this weapon"
+	output OnPlayerPickup(void) : "Fires when the player picks up this weapon"
+]
+
+@PointClass base(Weapon) studio("models/weapons/w_pist_1911.mdl") = weapon_1911 : "1911" []
+@PointClass base(Weapon) studio("models/weapons/w_rif_ak47.mdl") = weapon_ak47 : "AK47" []
+@PointClass base(Weapon) studio("models/weapons/w_rif_aks74u.mdl") = weapon_aks74u : "AKS 74u" []
+@PointClass base(Weapon) studio("models/weapons/w_rif_fnfal.mdl") = weapon_fnfal : "FN-FAL" []
+@PointClass base(Weapon) studio("models/weapons/w_sr_l42a1.mdl") = weapon_l42a1 : "L42A1" []
+@PointClass base(Weapon) studio("models/weapons/w_rif_m4.mdl") = weapon_m4 : "M4" []
+@PointClass base(Weapon) studio("models/weapons/w_rif_m4med.mdl") = weapon_m4med : "M4 AIM POINT" []
+@PointClass base(Weapon) studio("models/weapons/w_pist_m9.mdl") = weapon_m9 : "M9" []
+@PointClass base(Weapon) studio("models/weapons/w_sr_m14.mdl") = weapon_m14 : "M14" []
+@PointClass base(Weapon) studio("models/weapons/w_rif_m16a4.mdl") = weapon_m16a4 : "M16A4" []
+@PointClass base(Weapon) studio("models/weapons/w_rif_m16m203.mdl") = weapon_m16m203 : "M16M203" []
+@PointClass base(Weapon) studio("models/weapons/w_gren_m18.mdl") = weapon_m18 : "M18" []
+@PointClass base(Weapon) studio("models/weapons/w_gren_m67.mdl") = weapon_m67 : "M67" []
+@PointClass base(Weapon) studio("models/weapons/w_mach_m249.mdl") = weapon_m249 : "M249" []
+@PointClass base(Weapon) studio("models/weapons/w_shot_m1014.mdl") = weapon_m1014 : "M1014" []
+@PointClass base(Weapon) studio("models/weapons/w_pist_makarov.mdl") = weapon_makarov : "MAKAROV" []
+@PointClass base(Weapon) studio("models/weapons/w_gren_m67.mdl") = weapon_rgd5 : "RGD5" []
+@PointClass base(Weapon) studio("models/weapons/w_at_rpg7.mdl") = weapon_rpg7 : "RPG-7" []
+@PointClass base(Weapon) studio("models/weapons/w_mach_rpk47.mdl") = weapon_rpk : "RPK" []
+@PointClass base(Weapon) studio("models/weapons/w_rif_sks.mdl") = weapon_sks : "SKS" []
+@PointClass base(Weapon) studio("models/weapons/w_snip_svd.mdl") = weapon_svd : "SVD" []
+@PointClass base(Weapon) studio("models/weapons/w_shot_toz.mdl") = weapon_toz : "TOZ" []
+
+// HL2
+
+@SolidClass base(Trigger) = trigger_weapon_strip :
+	"A volumetric trigger that strips combat characters of all weapons"
+[
+	KillWeapons(choices) : "Kill Weapons" : "No" =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+]
+
+@PointClass base(Targetname) size(-16 -16 -16, 16 16 16) = player_weaponstrip : "Strips player's weapons"
+[
+	// Inputs
+	input Strip(void) : "Strip player's weapons"
+	input StripWeaponsAndSuit(void) : "Strip player's weapons and his suit"
+]
+
+@SolidClass base(Trigger) = trigger_weapon_dissolve :
+	"A volumetric trigger that dissolves all weapons within it"
+[
+	emittername(target_destination) : "Emitter Name" : "" : "Name of a single or multiple entities to use as the basis for the emitted effects."
+
+	// Outputs
+	output OnDissolveWeapon(void) : "Fires when one weapon is starting to dissolve in the trigger volume."
+	output OnChargingPhyscannon(void) : "Fires when the trigger begins to charge the physcannon."
+
+	// Inputs
+	input StopSound(void) : "Stops all sounds."
+]

@@ -1,0 +1,121 @@
+IMCData
+{	
+	"mapname"  		"Desert Storm"
+	"theatre" 		"THEATERTYPE_IRAQ"
+	"vmapname"		"ins_desert_storm"	
+	"mapoverview"	"Infantry Desert Combat Push"
+
+	TeamOne
+	{
+		"type"  	"TEAM_USMC"
+		"numwaves" 	"20"
+		"timewave" 	"5"
+		"objwaves" 	"3"
+		"ewaves" 	"2"
+
+		Squads		
+		{
+			"Squad"	"rifle"			
+			"Squad"	"sweapons"		
+		}
+	}
+
+	TeamTwo  					
+	{
+		"type"  	"TEAM_IRAQI"
+		"numwaves" 	"-1"
+		"timewave" 	"10"
+		"objwaves" 	"0"
+		"ewaves" 	"0"
+
+		Squads		
+		{
+			"Squad"	"rifle"			
+			"Squad"	"sweapons"		
+		}
+	}
+
+	ObjectiveData
+	{
+		"USMC Spawn"
+		{
+			"phonetic" 	"e"		
+			"color"  	"IMCCOLOR_BLACK"
+		}
+	
+		"Power Station"
+		{
+			"phonetic" 	"a"
+			"color"  	"IMCCOLOR_YELLOW"
+		}
+
+		"Outlook A"
+		{
+			"phonetic" 	"b"
+			"color"  	"IMCCOLOR_ORANGE"
+		}
+		
+		"Outlook B"
+		{
+			"phonetic" 	"c"
+			"color"  	"IMCCOLOR_ORANGE"
+		}		
+
+		"Outlook C"
+		{
+			"phonetic" 	"d"
+			"color"  	"IMCCOLOR_RED"
+		}
+	}
+
+	ProfileData 					
+	{
+		"Push"  				
+		{
+			"gametype" 				"GAMETYPE_PUSH"
+			"roundlength" 			"900"
+			"capturingfallback" 	"1"
+			"colorcorrection"		"sinjar"
+			
+			ObjectiveData
+			{
+				"USMC Spawn"
+				{
+					"teamstart"		"TEAMSTART_ONE"
+					"startspawn"	"1"
+					"hidden"		"1"
+				}
+
+				"Power Station"
+				{
+					"teamstart"		"TEAMSTART_TWO"
+					"reqpercent" 	"5"
+					"captime" 		"20"
+					"startspawn"	"1"
+				}
+
+				"Outlook A"
+				{
+					"teamstart"		"TEAMSTART_TWO"
+					"reqpercent" 	"5"
+					"captime" 		"20"
+				}
+				
+				"Outlook B"
+				{
+					"teamstart"		"TEAMSTART_TWO"
+					"reqpercent" 	"5"
+					"captime" 		"20"
+				}		
+
+				"Outlook C"
+				{
+					"teamstart"		"TEAMSTART_TWO"
+					"reqpercent" 	"5"
+					"captime" 		"20"
+					"mixedspawns"	"1"
+				}				
+			}
+		}
+	}
+}

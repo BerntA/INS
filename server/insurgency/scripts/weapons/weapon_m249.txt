@@ -1,0 +1,46 @@
+WeaponData
+{
+	"viewmodel"			"models/weapons/v_mach_m249.mdl"
+	"playermodel"			"models/weapons/w_mach_m249.mdl"
+	
+	"anim_suffix"			"M249"
+	
+	"clip_type"			"CLIP_M249"
+	"visible_belt"			"10"
+
+	"vmuzzle"			"945"
+	"erange"			"700"
+	
+
+	"cycle_time"			"725"
+
+	"firemodes"			"4"		// FIREMODE_FULLAUTO
+	"spread_degrees"		"0.230"
+
+	"recoil_scale"			"3.5"
+	"shakiness_scale"		"0.2"
+	"ironsight_fov"			"78"
+	"viewmodel_fov"			"65"
+	"freeaim_distance_scale"	"1.5"
+
+	"weight"			"7.1"
+
+	"tracertype"			"TRACERTYPE_RED"
+
+	SoundData
+	{
+		"shot_single"			"Weapon_M249.Single"
+		"bullets_load"			"Weapon_M249.BulletsLoad"
+		"bullets_unload"		"Weapon_M249.BulletsUnload"
+		"open_lid"			"Weapon_M249.OpenLid"
+		"close_lid"			"Weapon_M249.CloseLid"
+		"bipod_open"			"Weapon_M249.BipodOpen"
+		"bipod_close"			"Weapon_M249.BipodClose"
+		"empty"				"Weapon_M249.Empty"
+		"boxin"				"Weapon_M249.BoxIn"
+		"boxout"			"Weapon_M249.BoxOut"
+		"boltback"			"Weapon_M249.Boltpull"
+	}
+
+	"ammotex"			"m249"
+}

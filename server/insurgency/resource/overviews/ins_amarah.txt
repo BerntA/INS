@@ -1,0 +1,9 @@
+"ins_amarah"
+{
+	"material" 	"maps/overviews/ins_amarah"
+	"pos_x" 	"-8222"
+	"pos_y" 	"8575"
+	"scale" 	"13.0"
+	"zoom"		"1.0"
+	"rotate"	"0"
+}

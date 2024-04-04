@@ -1,0 +1,121 @@
+IMCData
+{	
+	"mapname"  		"ins_shulah"	
+	"theatre" 		"THEATERTYPE_IRAQ" 	
+	"vmapname"		"ins_shulah"	
+	"timestamp"  		"1187096640"  		
+	"mapoverview"  		"Contractors carrying out upgrades for local Shulah shopkeepers have discovered weapon caches hidden throughout the district. A USMC Patrol came under fire after being sent in to clear the area of any possible hostiles and secure the weapons."
+
+	TeamOne  					
+	{
+		"type"  	"TEAM_USMC"   		
+		"numwaves" 	"12"			
+		"timewave" 	"12"			
+		"objwaves" 	"2"			
+		"ewaves" 	"2"			
+
+
+		Squads		
+		{
+			"Squad"	"rifle"			
+			"Squad"	"sweapons"		
+		}
+	}
+
+	TeamTwo  					
+	{
+		"type"  	"TEAM_IRAQI"		
+		"numwaves" 	"12"			
+		"timewave" 	"12"			
+		"objwaves" 	"2"				
+		"ewaves" 	"0"			
+
+		Squads
+		{
+			"Squad"	"rifle"			
+			"Squad"	"sweapons"		
+		}
+	}
+
+	ObjectiveData 					
+	{
+		"Marince Spawn"	 			
+		{
+			"phonetic" 	"y"		
+			"color"  	"IMCCOLOR_BLACK"
+		}
+	
+		"Appartments" 				
+		{
+			"phonetic" 	"a"
+			"color"  	"IMCCOLOR_YELLOW"
+		}
+
+		"Market Square" 				
+		{
+			"phonetic" 	"b"
+			"color"  	"IMCCOLOR_ORANGE"
+		}
+
+		"Warehouse" 				
+		{
+			"phonetic" 	"c"
+			"color"  	"IMCCOLOR_Blue"
+		}
+
+		"Insurgent Spawn" 				
+		{
+			"phonetic" 	"x"
+			"color"  	"IMCCOLOR_RED"
+		}	
+	}
+
+	ProfileData 					
+	{
+		"Firefight"  				
+		{
+			"gametype" 	"GAMETYPE_FIREFIGHT"
+			"roundlength" 	"900"
+			"movingspawns"	"0"					
+
+			 ObjectiveData 						
+			 {
+				"Marince Spawn" 					
+				{
+					"teamstart" 	"TEAMSTART_ONE" 	
+					"startspawn"	"1"			
+					"hidden"	"1"			
+				}
+
+				"Appartments" 
+				{
+					"teamstart" 	"TEAMSTART_NEUTRAL"
+					"reqpercent" 	"15"			
+					"captime" 	"15"			
+ 				}
+
+				"Market Square" 
+				{
+					"teamstart" 	"TEAMSTART_NEUTRAL"
+					"reqpercent" 	"15"
+					"captime" 	"15"
+				}
+
+				"Warehouse" 
+				{
+					"teamstart" 	"TEAMSTART_NEUTRAL"
+					"reqpercent" 	"15"
+					"captime" 	"15"
+				}
+
+				"Insurgent Spawn" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"	
+					"startspawn"	"1"			
+					"hidden"	"1"			
+				}
+
+			}
+		}
+	}
+}

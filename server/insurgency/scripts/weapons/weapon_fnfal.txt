@@ -1,0 +1,36 @@
+WeaponData
+{
+	"viewmodel"			"models/weapons/v_rif_fnfal.mdl"
+	"playermodel"			"models/weapons/w_rif_fnfal.mdl"
+	
+	"anim_suffix"			"AK47"
+	
+	"clip_type"			"CLIP_FNFAL"
+
+	"vmuzzle"			"840"
+	"erange"			"650"
+
+	"cycle_time"			"650"
+
+	"firemodes"			"1"		// FIREMODE_SEMI
+	"spread_degrees"		"0.175"
+
+	"recoil_scale"			"2.5"
+	"shakiness_scale"		"0.5"
+	"freeaim_distance_scale"	"0.5"
+
+	"ironsight_fov"			"72"
+	"viewmodel_ironsight_fov"	"50"
+
+	"weight"			"4.25"
+
+	SoundData
+	{
+		"shot_single"		"Weapon_FAL.Single"
+		"clipin"		"Weapon_FAL.Magin"
+		"clipout"		"Weapon_FAL.Magout"
+		"chamber"		"Weapon_FAL.Chamber"
+	}
+
+	"ammotex"			"fnfal"
+}

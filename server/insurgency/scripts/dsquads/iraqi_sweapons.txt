@@ -1,0 +1,18 @@
+SquadData
+{
+	"name"		"Specialists Cell"
+	"description"	"The specialists cell's job is to support the convential arm cell's advance. Armed with heavier firepower and special weapons, keep the enemy pinned down so the assault team can advance."
+
+	SlotData
+	{
+		"slot_one"	"Militant"
+		"slot_two"	"Rifleman"
+		"slot_three"	"RPG-7"
+		"slot_four"	"Sniper"
+
+		"slot_five"	"Militant"
+		"slot_six"	"Sapper"
+		"slot_seven"	"RPG-7"
+		"slot_eight"	"Sniper"
+	}
+}

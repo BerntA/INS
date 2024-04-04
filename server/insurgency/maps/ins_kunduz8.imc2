@@ -1,0 +1,125 @@
+IMCData
+{	
+	"mapname"  		"ins_kunduz8"		
+	"theatre" 		"THEATERTYPE_IRAQ" 	
+	"vmapname"		"ins_kunduz8"		
+	"timestamp"  		"00000000"  		
+	"mapoverview"  		"Near the Kunduz river in Afghanistan coalition forces struggle to take hold of a small farming and irragation canal. The coaltion force must capture the objecties in order to win the battle while the insurgents struggle to defend the objectives from capture by the coalition forces"
+
+	TeamOne  					
+	{
+		"type"  	"TEAM_USMC"   		
+		"numwaves" 	"-1"			
+		"timewave" 	"10"			 
+		"objwaves" 	"5"			
+		"ewaves" 	"3"			
+
+
+		Squads		
+		{
+			"Squad"	"rifle"			
+			"Squad"	"sweapons"		
+		}
+	}
+
+	TeamTwo  					
+	{
+		"type"  	"TEAM_IRAQI"		
+		"numwaves" 	"-1"			
+		"timewave" 	"30"			 
+		"objwaves" 	"0"				
+		"ewaves" 	"0"			
+
+
+		Squads
+		{
+			"Squad"	"rifle"			
+			"Squad"	"sweapons"		
+		}
+	}
+
+	ObjectiveData 					
+	{
+		"objective 0"	 			
+		{
+			"phonetic" 	"y"		
+			"color"  	"IMCCOLOR_BLACK"
+		}
+	
+		"objective 1" 				
+		{
+			"phonetic" 	"a"
+			"color"  	"IMCCOLOR_YELLOW"
+		}
+
+		"objective 2" 				
+		{
+			"phonetic" 	"b"
+			"color"  	"IMCCOLOR_ORANGE"
+		}
+
+		"objective 3" 				
+		{
+			"phonetic" 	"c"
+			"color"  	"IMCCOLOR_RED"
+		}
+
+                "objective 4" 				
+		{
+			"phonetic" 	"d"
+			"color"  	"IMCCOLOR_RED"
+		}		
+	}
+
+	ProfileData 					
+	{
+		"Push"  				
+		{
+			"gametype" 	"GAMETYPE_PUSH"		
+			"roundlength" 	"900"
+			"capturingfallback" "1"
+
+
+			 ObjectiveData 			
+			 {
+				"objective 0" 		
+				{
+					"teamstart" 	"TEAMSTART_ONE" 	
+					"startspawn"	"1"			
+					"hidden"	"1"			
+				}
+
+				"objective 1" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"5"			
+					"captime" 	"20"			
+					"startspawn"	"1"			
+ 				}
+
+				"objective 2" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"5"
+					"captime" 	"18"
+				}
+
+                                "objective 3" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"5"
+					"captime" 	"18"
+				}
+
+				"objective 4" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"5"
+					"captime" 	"15"
+					"mixedspawns"	"1"			
+				}
+
+			}
+		}
+	}
+}

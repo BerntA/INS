@@ -1,0 +1,36 @@
+WeaponData
+{
+	"viewmodel"			"models/weapons/v_pist_makarov.mdl"
+	"playermodel"			"models/weapons/w_pist_makarov.mdl"
+	
+	"anim_suffix"			"PISTOL"
+	
+	"clip_type"			"CLIP_MAKAROV"
+
+	"vmuzzle"			"315"
+	"erange"			"50"
+	
+	"firemodes"			"1"		// FIREMODE_SEMI
+
+	"ironsight_fov"			"80"
+	"viewmodel_ironsight_fov"	"65"
+	"recoil_scale"			"4.0"
+	"shakiness_scale"		"3.0"
+	"freeaim_distance_scale"	"1.5"
+
+	"weight"			"0.73"
+
+	SoundData
+	{
+		"shot_single"			"Weapon_Makarov.Single"
+		"empty"				"Weapon_Makarov.Empty"
+		"magin"				"Weapon_Makarov.Magin"
+		"magout"			"Weapon_Makarov.Magout"
+		"slide_back"			"Weapon_Makarov.SlideBack"
+		"slide_forward"			"Weapon_Makarov.SlideForward"
+		"safety"			"Weapon_Makarov.Safety"
+	}
+
+	"ammotex"			"makarov"
+}
+

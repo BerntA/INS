@@ -1,0 +1,40 @@
+WeaponData
+{
+	"viewmodel"			"models/weapons/v_rif_aks74u.mdl"
+	"playermodel"			"models/weapons/w_rif_aks74u.mdl"
+	
+	"anim_suffix"			"AK47"
+
+	"clip_type"			"CLIP_AK47"
+	
+	"vmuzzle"			"735"
+	"erange"			"200"
+
+	"cycle_time"			"650"
+
+	"firemodes"			"5"		// FIREMODE_SEMI | FIREMODE_FULLAUTO
+	"spread_degrees"		"0.2"
+
+	"recoil_scale"			"2.2"
+	"shakiness_scale"		"0.5"
+	"freeaim_distance_scale"	"1.3"
+
+	"ironsight_fov"			"72"
+	"viewmodel_ironsight_fov"	"53"
+
+	"weight"			"2.71"
+
+ 	SoundData
+	{
+		"shot_single"	"Weapon_AKS74U.Single"
+		"empty"		"Weapon_AKS74U.Empty"
+		"clipin"	"Weapon_AKS74U.Magin"
+	        "clipout"	"Weapon_AKS74U.Magout"
+                "boltback"      "Weapon_AKS74U.Boltback"
+                "boltrelease"   "Weapon_AKS74U.Boltrelease"
+                "rofdown"       "Weapon_AK47.ROFdown"
+                "rofup"         "Weapon_AK47.ROFup"
+	}
+
+	"ammotex"		"ak47"
+}

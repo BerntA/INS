@@ -1,0 +1,145 @@
+IMCData
+{	
+	"mapname"  		"Karbala"		
+	"theatre" 		"THEATERTYPE_IRAQ" 
+	"vmapname"		"ins_karbala_b4"
+	"timestamp"  		"1256771343"
+	"mapoverview"  		"The city of Karbala is a key strategic point for the USMC. They must take control of the city before going further. The first squad has already been decimed. Map made by KaNaR, mail @ remvst@gmail.com"
+
+	TeamOne  					
+	{
+		"type"  	"TEAM_USMC"   		
+		"numwaves" 	"-1"			
+		"timewave" 	"15"			
+		"objwaves" 	"0"			
+		"ewaves" 	"0"			
+
+
+		Squads		
+		{
+			"Squad"	"rifle"			
+			"Squad"	"sweapons"		
+		}
+	}
+
+	TeamTwo  					
+	{
+		"type"  	"TEAM_IRAQI"		
+		"numwaves" 	"-1"			
+		"timewave" 	"15"			
+		"objwaves" 	"0"			
+		"ewaves" 	"0"			
+
+
+		Squads
+		{
+			"Squad"	"rifle"			
+			"Squad"	"sweapons"		
+		}
+	}
+
+	ObjectiveData 					
+	{
+		"objective 0"	 			
+		{
+			"phonetic" 	"y"		
+			"color"  	"IMCCOLOR_BLACK"
+		}
+	
+		"Humvee" 				
+		{
+			"phonetic" 	"a"
+			"color"  	"IMCCOLOR_YELLOW"
+		}
+
+		"Store" 				
+		{
+			"phonetic" 	"b"
+			"color"  	"IMCCOLOR_ORANGE"
+		}
+
+		"House" 				
+		{
+			"phonetic" 	"c"
+			"color"  	"IMCCOLOR_RED"
+		}
+		
+		"Street" 				
+		{
+			"phonetic" 	"d"
+			"color"  	"IMCCOLOR_RED"
+		}	
+		"Buildings" 				
+		{
+			"phonetic" 	"e"
+			"color"  	"IMCCOLOR_RED"
+		}	
+		"objective 6" 				
+		{
+			"phonetic" 	"x"
+			"color"  	"IMCCOLOR_RED"
+		}	
+	}
+
+	ProfileData 					
+	{
+		"Battle"  				
+		{
+			"gametype" 	"GAMETYPE_BATTLE"   
+			"roundlength" 	"900"
+
+
+
+			 ObjectiveData 			
+			 {
+				"objective 0" 		
+				{
+					"teamstart" 	"TEAMSTART_ONE" 	
+					"hidden"	"1"			
+				}
+
+				"Humvee" 
+				{
+					"teamstart" 	"TEAMSTART_ONE"
+					"reqpercent" 	"15"			
+					"captime" 	"15"			
+ 				}
+
+				"Store" 
+				{
+					"teamstart" 	"TEAMSTART_ONE"
+					"reqpercent" 	"15"
+					"captime" 	"15"
+					"startspawn"	"1"			
+				}
+
+				"House" 
+				{
+					"teamstart" 	"TEAMSTART_NEUTRAL"
+					"reqpercent" 	"15"
+					"captime" 	"15"
+				}
+
+				"Street" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"15"
+					"captime" 	"15"
+					"startspawn"	"1"	
+				}
+				"Buildings" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"15"
+					"captime" 	"15"
+				}
+				"objective 6" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"hidden"	"1"			
+				}
+
+			}
+		}
+	}
+}

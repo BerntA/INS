@@ -1,0 +1,36 @@
+WeaponData
+{
+	"viewmodel"			"models/weapons/v_pist_m9.mdl"
+	"playermodel"			"models/weapons/w_pist_m9.mdl"
+	
+	"anim_suffix"			"PISTOL"
+
+	"clip_type"			"CLIP_M9"
+
+	"vmuzzle"			"365"
+	"erange"			"50"
+
+	"firemodes"			"1"		// FIREMODE_SEMI
+
+	"ironsight_fov"			"80"
+	"viewmodel_fov"			"62"
+	"viewmodel_ironsight_fov"	"65"
+	"recoil_scale"			"4.0"
+	"shakiness_scale"		"2.0"
+	"freeaim_distance_scale"	"0.5"
+
+	"weight"			"0.95"
+
+	SoundData
+	{
+		"shot_single"			"Weapon_M9.Single"
+		"empty"				"Weapon_M9.Empty"
+		"clipin"			"Weapon_M9.Clipin"
+		"clipout"			"Weapon_M9.Clipout"
+		"slideback"			"Weapon_M9.slideback"
+		"slideforward"			"Weapon_M9.slideforward"
+		"safety"			"Weapon_M9.safety"
+	}
+
+	"ammotex"			"m9"
+}

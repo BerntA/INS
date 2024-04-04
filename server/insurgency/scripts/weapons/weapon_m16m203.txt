@@ -1,0 +1,44 @@
+WeaponData
+{
+	"viewmodel"			"models/weapons/v_rif_m16m203.mdl"
+	"playermodel"			"models/weapons/w_rif_m16m203.mdl"
+	
+	"anim_suffix"			"AK47"
+
+	"clip_type"			"CLIP_M16"
+	
+	"vmuzzle"			"945"
+	"erange"			"700"
+
+	"burst_cycle_time"		"700"
+
+	"firemodes"			"3"		// FIREMODE_SEMI | FIREMODE_3RNDBURST
+	"spread_degrees"		"0.165"
+	
+	"recoil_scale"			"2.5"
+	"shakiness_scale"		"0.75"
+	"freeaim_distance_scale"	"1.0"
+
+	"ironsight_fov"			"73"
+
+	"weight"			"4.87"
+
+	SoundData
+	{
+		"shot_single"		"Weapon_M16A4.Single"
+		"shot_gren"		"Weapon_M16A4.M203"
+		"shot_double"		"Weapon_M16A4.M203"
+                "empty"			"Weapon_M16A4.Empty"
+		"clipin"		"Weapon_M16A4.Magin"
+		"clipout"		"Weapon_M16A4.Magout"
+		"boltback"		"Weapon_M16A4.Boltback"
+		"boltforward"		"Weapon_M16A4.Boltrelease"
+		"hit"			"Weapon_M16A4.Hit"
+		"open"			"Weapon_M203.Open"
+		"close"			"Weapon_M203.Close"
+		"load"			"Weapon_M203.Load"
+	}
+
+	"ammotex"			"m16a4"
+	"grenadetex"			"m16m203"
+}

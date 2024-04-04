@@ -1,0 +1,36 @@
+WeaponData
+{
+	"viewmodel"			"models/weapons/v_pist_1911.mdl"
+	"playermodel"			"models/weapons/w_pist_1911.mdl"
+	
+	"anim_suffix"			"PISTOL"
+
+	"clip_type"			"CLIP_1911"
+
+	"vmuzzle"			"290"
+	"erange"			"62"
+
+	"firemodes"			"1"		// FIREMODE_SEMI
+
+	"ironsight_fov"			"80"
+	"viewmodel_fov"			"62"
+	"viewmodel_ironsight_fov"	"65"
+	"recoil_scale"			"5.0"
+	"shakiness_scale"		"2.5"
+	"freeaim_distance_scale"	"0.5"
+
+	"weight"			"1.1"
+
+	SoundData
+	{
+		"shot_single"			"Weapon_1911.Single"
+		"empty"				"Weapon_1911.Empty"
+		"clipin"			"Weapon_1911.Clipin"
+		"clipout"			"Weapon_1911.Clipout"
+		"slideback"			"Weapon_1911.slideback"
+		"slideforward"			"Weapon_1911.slideforward"
+		"safety"			"Weapon_1911.safety"
+	}
+
+	"ammotex"			"1911"
+}

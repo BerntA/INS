@@ -1,0 +1,48 @@
+//Links
+//1. http://www.waffeninfo.net/waff_ak74.php
+//2. http://de.wikipedia.org/wiki/AK74
+//3. http://ru.wikipedia.org/wiki
+//4. http://forum.valka.cz/viewtopic.php/t/19069/title/545x39-mm
+
+WeaponData
+{
+	"viewmodel"					"models/weapons/v_rif_ak47.mdl"
+	"playermodel"					"models/weapons/w_rif_ak47.mdl"
+	
+	"anim_suffix"					"AK47"
+
+	"clip_type"					"CLIP_AK74"
+	
+	"erange"					"400"		// Effective combat range in meters
+	"vmuzzle"					"880"		// Exit velocity in meters per second
+	"barrellength"					"415"		// Length of barrel in milimeters
+
+	"cycle_time_min"				"600"
+	"cycle_time_max"				"600"
+
+	"firemodes"					"5"		// FIREMODE_SEMI | FIREMODE_FULLAUTO
+	"spread_degrees"				"0.185"
+
+	"recoil_scale"					"1.0"
+	"shakiness_scale"				"1.0"
+	"freeaim_distance_scale"			"1.3"
+
+	"ironsight_fov"					"72"
+	"viewmodel_ironsight_fov"			"53"
+
+	"weight"					"3.3" 		// Weight in kilo WITHOUT AMMO
+
+ 	SoundData
+	{
+			"shot_single"		"Weapon_AKS74U.Single"
+			"empty"				"Weapon_AKS74U.Empty"
+			"clipin"			"Weapon_AKS74U.Magin"
+	        "clipout"			"Weapon_AKS74U.Magout"
+            "boltback"  	    "Weapon_AKS74U.Boltback"
+            "boltrelease"		"Weapon_AKS74U.Boltrelease"
+            "rofdown"			"Weapon_AK47.ROFdown"
+            "rofup"				"Weapon_AK47.ROFup"
+	}
+
+	"ammotex"						"ak47"
+}

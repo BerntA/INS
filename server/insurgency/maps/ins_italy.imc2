@@ -1,0 +1,131 @@
+IMCData
+{	
+	"mapname"  		"Italy"
+	"theatre" 		"THEATERTYPE_IRAQ"
+	"vmapname"		"ins_italy"	
+	"mapoverview"	"Secure the city from any insurgents!"
+
+	TeamOne
+	{
+		"type"  	"TEAM_USMC"
+		"numwaves" 	"10"
+		"timewave" 	"5"
+		"objwaves" 	"2"
+		"ewaves" 	"1"
+
+		Squads		
+		{
+			"Squad"	"rifle"			
+			"Squad"	"sweapons"		
+		}
+	}
+
+	TeamTwo  					
+	{
+		"type"  	"TEAM_IRAQI"
+		"numwaves" 	"-1"
+		"timewave" 	"8"
+		"objwaves" 	"0"
+		"ewaves" 	"0"
+
+		Squads		
+		{
+			"Squad"	"rifle"			
+			"Squad"	"sweapons"		
+		}
+	}
+
+	ObjectiveData
+	{
+		"USMC Spawn"
+		{
+			"phonetic" 	"f"		
+			"color"  	"IMCCOLOR_RED"
+		}
+	
+		"Market"
+		{
+			"phonetic" 	"a"
+			"color"  	"IMCCOLOR_YELLOW"
+		}
+
+		"Winecellar"
+		{
+			"phonetic" 	"b"
+			"color"  	"IMCCOLOR_ORANGE"
+		}
+
+		"House A"
+		{
+			"phonetic" 	"c"
+			"color"  	"IMCCOLOR_BLUE"
+		}	
+		
+		"House B"
+		{
+			"phonetic" 	"d"
+			"color"  	"IMCCOLOR_BLUE"
+		}
+		
+		"IRAQI Spawn"
+		{
+			"phonetic" 	"e"
+			"color"  	"IMCCOLOR_RED"
+		}
+	}
+
+	ProfileData 					
+	{
+		"Firefight"  				
+		{
+			"gametype" 				"GAMETYPE_FIREFIGHT"
+			"roundlength" 			"900"
+			"movingspawns"			"0"
+			
+			ObjectiveData
+			{
+				"USMC Spawn"
+				{
+					"teamstart"		"TEAMSTART_ONE"
+					"startspawn"	"1"
+					"hidden"		"1"
+				}
+				
+				"Market"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"20"
+					"captime"		"30"
+				}
+
+				"Winecellar"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"20"
+					"captime"		"30"
+				}
+
+				"House A"
+				{
+					"teamstart"		"TEAMSTART_TWO"
+					"reqpercent"	"20"
+					"captime"		"30"
+				}	
+				
+				"House B"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"20"
+					"captime"		"30"
+				}
+
+				"IRAQI Spawn"
+				{
+					"teamstart"		"TEAMSTART_TWO"
+					"startspawn"	"1"
+					"hidden"		"1"
+				}
+			}
+		}
+	}
+}

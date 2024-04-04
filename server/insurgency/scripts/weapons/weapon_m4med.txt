@@ -1,0 +1,39 @@
+// This is the m4 with front grips and not scoped
+WeaponData
+{
+	"viewmodel"			"models/weapons/v_rif_m4med.mdl"
+	"playermodel"			"models/weapons/w_rif_m4med.mdl"
+	
+	"anim_suffix"			"M16"
+	
+	"clip_type"			"CLIP_M16"
+
+	"vmuzzle"		"884"
+	"erange"		"450"
+
+	"cycle_time"		"700" // 700 - 950
+	"firemodes"			"5"		// FIREMODE_SEMI | FIREMODE_FULLAUTO
+	"spread_degrees"		"0.155"
+
+	"recoil_scale"			"1.8"
+	"shakiness_scale"		"0.4"
+	"freeaim_distance_scale"	"1.0"
+
+	"ironsight_fov"			"73"
+	// "viewmodel_ironsight_fov"	"54"
+
+	"weight"			"2.8"
+
+	SoundData
+	{
+		"shot_single"		"Weapon_M4.Single"
+                "empty"			"Weapon_M16A4.Empty"
+		"clipin"		"Weapon_M16A4.Magin"
+		"clipout"		"Weapon_M16A4.Magout"
+		"boltback"		"Weapon_M16A4.Boltback"
+		"boltforward"		"Weapon_M16A4.Boltrelease"
+		"hit"			"Weapon_M16A4.Hit"
+	}
+
+	"ammotex"			"m4"
+}

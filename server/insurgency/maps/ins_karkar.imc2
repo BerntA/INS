@@ -1,0 +1,143 @@
+IMCData
+{
+	"mapname"  		"Karkar"
+	"theatre" 		"THEATERTYPE_IRAQ"
+	"vmapname"		"ins_karkar"
+	"timestamp"  		"1075676400"
+	"mapoverview"  		"Taliban fighters are hiding in an abandoned coalmine. Coalition forces have been sent to clear the perimeter of any hostiles. Heavy resistance is expected."
+	"mapncolorf"		"IMCCOLOR_YELLOW"
+	"mapncolorb"		"IMCCOLOR_GREEN"
+
+	TeamOne  	// defines what country/side, reinforcements, reinforcements timer and squad types
+	{
+		"type"  	"TEAM_USMC"
+		"numwaves" 	"20"
+		"timewave" 	"10"
+		"objwaves" 	"5"
+		"ewaves" 	"3"
+
+		Squads		
+		{
+			"Squad"	"rifle"
+			"Squad"	"sweapons"
+		}
+	}
+
+	TeamTwo  	// defines what country/side, reinforcements, reinforcements timer and squad types
+	{
+		"type"  	"TEAM_IRAQI"
+		"numwaves" 	"-1"		// -1 is unlimited
+		"timewave" 	"30"
+		"objwaves" 	"0"
+		"ewaves" 	"0"
+
+		Squads
+		{
+			"Squad"	"rifle"
+			"Squad"	"sweapons"
+		}
+	}
+
+	ObjectiveData 	// lists all availeble objectives for this map
+	{
+		"US_start"	 //obj-Id 0
+		{
+			"phonetic" 	"y"
+			"color"  	"IMCCOLOR_BLACK"
+		}
+
+		"Shack" 	//obj-Id 1 
+		{
+			"phonetic" 	"z"
+			"color"  	"IMCCOLOR_YELLOW"
+		}
+
+		"Mine Building" //obj-Id 2  
+		{
+			"phonetic" 	"a"
+			"color"  	"IMCCOLOR_YELLOW"
+		}
+
+		"Mine Shaft" 	//obj-Id 3 
+		{
+			"phonetic" 	"b"
+			"color"  	"IMCCOLOR_ORANGE"
+		}
+
+		"Mine Shaft2" 	//obj-Id 4    !!Don't use, no longer supported in map.
+		{
+			"phonetic" 	"d"
+			"color"  	"IMCCOLOR_RED"
+		}
+
+		"Mine Cave" //obj-Id 5 Battle obj4
+		{
+			"phonetic" 	"c"
+			"color"  	"IMCCOLOR_RED"
+		}
+
+		"Train Yard" //obj-Id 6  Battle obj1
+		{
+			"phonetic" 	"e"
+			"color"  	"IMCCOLOR_BLUE"
+		}
+
+		"Tunnel Entrance" //obj-Id 7  Battle obj2
+		{
+			"phonetic" 	"f"
+			"color"  	"IMCCOLOR_YELLOW"
+		}
+
+		"Elevator" //obj-Id 8  Battle obj3
+		{
+			"phonetic" 	"g"
+			"color"  	"IMCCOLOR_ORANGE"
+		}
+	}
+
+	ProfileData 	// Lists the different gamemodes for this map
+	{
+		"Push"  // gamemode 1 (default, ID0)
+		{
+			"gametype" 	"GAMETYPE_PUSH"
+			"roundlength" 	"900"
+			"capturingfallback" "1"
+//			"colorcorrection" "karkar"
+
+
+			 ObjectiveData //Selection of the objectdata list thats used for this gamemode
+			 {
+				"US_start" 
+				{
+					"teamstart" 	"TEAMSTART_ONE" 
+					"startspawn"	"1"
+					"hidden"	"1"
+				}
+
+				"Mine Building" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"15"
+					"captime" 	"20"
+					"startspawn"	"1"
+				}
+
+				"Mine Shaft" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"15"
+					"captime" 	"20"
+				}
+
+				"Mine Cave" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"15"
+					"captime" 	"25"
+					"mixedspawns"	"25"
+				}
+
+			}
+		}
+	}
+}

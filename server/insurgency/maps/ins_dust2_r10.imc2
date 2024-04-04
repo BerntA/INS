@@ -1,0 +1,119 @@
+IMCData
+{
+	"mapname"		"DUST"
+	"vmapname"		"ins_dust2_r10"	
+	"theatre" 		"THEATERTYPE_IRAQ"
+	"mapoverview"	"Classic INS dust2 map by sMo.licious!"
+	
+	TeamOne
+	{
+		"type"			"TEAM_USMC"
+		"numwaves"		"10"
+		"objwaves"		"2"
+		"ewaves"		"2"
+		"timewave"		"5"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}	
+
+	TeamTwo
+	{
+		"type"			"TEAM_IRAQI"
+		"numwaves"		"10"
+		"objwaves"		"2"
+		"ewaves"		"2"
+		"timewave"		"5"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	ObjectiveData
+	{
+		"Spawn Zone Team 1" 			
+		{
+			"phonetic"	"e"
+			"color"		"IMCCOLOR_YELLOW"
+		}	
+
+		"Objective Alpha" 			
+		{
+			"phonetic"	"a"
+			"color"		"IMCCOLOR_RED"
+		}
+
+		"Objective Bravo"	 		
+		{
+			"phonetic"	"b"
+			"color"		"IMCCOLOR_BLUE"
+		}
+
+		"Objective Charly" 		
+		{
+			"phonetic"	"c"
+			"color"		"IMCCOLOR_ORANGE"
+		}
+		
+		"Spawn Zone Team 2" 		
+		{
+			"phonetic"	"d"
+			"color"		"IMCCOLOR_BLUE"
+		}		
+	}
+
+	ProfileData		
+	{
+		"Firefight"
+		{
+			"gametype"				"GAMETYPE_FIREFIGHT"
+			"roundlength"			"900"
+			"movingspawns"			"0"
+			"colorcorrection"		"ramadifinal"
+
+			ObjectiveData
+			{
+				"Spawn Zone Team 1"
+				{	
+					"teamstart"		"TEAMSTART_ONE"
+					"hidden"		"1"
+					"startspawn"	"1"
+				}	
+
+				"Objective Alpha"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"20"
+					"captime"		"15"
+				}
+
+				"Objective Bravo"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"20"
+					"captime"		"15"
+				}
+
+				"Objective Charly"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"20"
+					"captime"		"15"
+				}
+				
+				"Spawn Zone Team 2"
+				{
+					"teamstart"		"TEAMSTART_TWO"
+					"hidden"		"1"
+					"startspawn"	"1"
+				}				
+			}
+		}
+	}
+}

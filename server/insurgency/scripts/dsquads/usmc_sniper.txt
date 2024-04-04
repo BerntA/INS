@@ -1,0 +1,16 @@
+SquadData
+{
+	"name"		"Marksman Detachment"
+	"description"	"The marksman detachment's job is to pick off long-range enemy targets in the area."
+
+	SlotData
+	{
+		"slot_two"	"Marksman"
+		"slot_three"	"Marksman"
+		"slot_four"	"Marksman"
+		"slot_five"	"Marksman"
+		"slot_six"	"Marksman"
+		"slot_seven"	"Marksman"
+		"slot_eight"	"Marksman"
+	}
+}

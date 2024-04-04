@@ -1,0 +1,36 @@
+WeaponData
+{
+	"viewmodel"			"models/weapons/v_shot_toz.mdl"
+	"playermodel"			"models/weapons/w_shot_toz.mdl"
+	
+	"anim_suffix"			"SKS"
+	
+	"clip_type"			"CLIP_TOZ"
+
+	"vmuzzle"			"350"
+	"erange"			"50"
+	"cycle_time"			"200"
+
+	"spread_degrees"		"1.6"
+
+	"firemodes"			"1"		// FIREMODE_SEMI
+
+	"recoil_scale"			"5.0"
+	"shakiness_scale"		"0.5"
+	"freeaim_distance_scale"	"1.2"
+
+	"ironsight_fov"			"75"
+	"viewmodel_ironsight_fov"	"58"
+
+	"weight"			"2.9"
+
+	SoundData
+	{
+		"shot_single"		"Weapon_TOZ.Single"
+		"bolt_back"		"Weapon_TOZ.BoltBack"
+		"bolt_release"		"Weapon_TOZ.BoltRelease"
+		"shell_insert"		"Weapon_TOZ.ShellInsert"
+	}
+
+	"ammotex"			"toz"
+}

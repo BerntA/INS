@@ -1,0 +1,43 @@
+PlayerClassData
+{
+	"name"		"Rifleman"
+	"desc"		"Jarhead"
+	"filename"	"riflm"
+	"model"		"us_rifleman"
+
+	InventoryData
+	{
+		PrimaryWeapons
+		{
+			Weapon
+			{
+				"name"		"WEAPON_M16A4"
+				"clips"		"6"
+			}
+
+		}
+		SecondaryWeapons
+		{
+			Weapon
+			{
+				"name"		"WEAPON_M9"
+				"clips"		"2"
+
+			}
+		}
+		Equipment
+		{
+
+			Item
+			{
+				"name"		"ITEM_M67"
+				"count"		"1"
+			}
+			Item
+			{
+				"name"		"ITEM_BANDAGE"
+				"count"		"1"
+			}
+		}
+	}
+}

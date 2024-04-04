@@ -1,0 +1,136 @@
+IMCData
+{
+	"mapname"		"Samawah"
+	"vmapname"		"ins_samawah_day"
+	"theatre" 		"THEATERTYPE_IRAQ"
+	"timestamp"		"1067212800"
+	"mapoverview"		"Located 280 km southeast of Baghdad, the Samawah Oil Refinery is a key strategic resource for the Insurgency. US Troops must take control of it if they want to succeed in their offensive."
+	"mapncolorf"		"IMCCOLOR_GREEN"
+	"mapncolorb"		"IMCCOLOR_RED"
+
+	TeamOne
+	{
+		"type"		"TEAM_USMC"
+		"numwaves"	"12"
+		"objwaves"	"2"
+		"ewaves"	"2"
+		"timewave"	"20"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	TeamTwo
+	{
+		"type"		"TEAM_IRAQI"
+		"numwaves"	"12"
+		"objwaves"	"2"
+		"ewaves"	"2"
+		"timewave"	"20"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	ObjectiveData
+	{
+		"Spawn Zone 1" 	//id 0	
+		{
+			"phonetic"	"E"
+			"color"		"IMCCOLOR_BLUE"
+		}
+
+		"Street"  //id 1				
+		{
+			"phonetic"	"A"
+			"color"		"IMCCOLOR_RED"
+		}
+
+		"Oil Pump"	  //id 2			
+		{
+			"phonetic"	"B"
+			"color"		"IMCCOLOR_GREEN"
+		}
+
+		"Antenna"  //id 3			
+		{
+			"phonetic"	"c"
+			"color"		"IMCCOLOR_RED"
+		}
+		
+		"Warehouse"  //id 4			
+		{
+			"phonetic"	"D"
+			"color"		"IMCCOLOR_GREEN"
+		}
+
+		"Spawn Zone 2" 	  //id 5		
+		{
+			"phonetic"	"E"
+			"color"		"IMCCOLOR_BLUE"
+		}
+
+	}
+
+	ProfileData		
+	{
+		"Firefight"
+		{
+			"gametype"			"GAMETYPE_FIREFIGHT"
+			"roundlength"			"950"
+			"movingspawns"			"0"
+
+			ObjectiveData
+			{
+				"Spawn Zone 1"
+				{	
+					"teamstart"	"TEAMSTART_ONE"
+					"hidden"	"1"
+					"startspawn"	"1"
+				}
+
+				"Street"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"15"
+					"captime"	"15"
+				}
+
+				"Oil Pump"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"15"
+					"captime"	"15"
+				}
+
+				"Antenna"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"15"
+					"captime"	"15"
+				}
+				
+				"Warehouse"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"15"
+					"captime"	"15"
+				}
+
+
+				"Spawn Zone 2"
+				{
+					"teamstart"	"TEAMSTART_TWO"
+					"hidden"	"1"
+					"startspawn"	"1"
+				}
+			}
+		}
+	}
+}

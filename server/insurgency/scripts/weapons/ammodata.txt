@@ -1,0 +1,142 @@
+AmmoDef
+{
+	// please note that the vmuzzle here is for the physics code to guess
+	// the forces applied to props etc
+	BulletData
+	{
+		"BULLET_556NATO"
+		{
+			"weight"		"4"
+			"caliber"		"5.56"
+			"formtype"		"BULLETFT_POINTEDFULLJACKETBOATTAILED"
+			"vmuzzle"		"930"
+			"xarea"			"1"
+			"shell"			"models/shells/shell_762nato.mdl"
+		}
+
+		"BULLET_762NATO"
+		{
+			"weight"		"9.3"
+			"caliber"		"7.62"
+			"formtype"		"BULLETFT_POINTEDFULLJACKETBOATTAILED"
+			"vmuzzle"		"838"
+			"xarea"			"1"
+			"shell"			"models/shells/shell_762nato.mdl"
+		}
+
+		"BULLET_9MMNATO"
+		{
+			"weight"		"7.5"
+			"caliber"		"9"
+			"vmuzzle"		"390"
+			"xarea"			"1"
+			"formtype"		"BULLETFT_ROUNDNOSEJACKETED"
+			"shell"			"models/shells/shell_9mm.mdl"
+		}
+
+		"BULLET_762RUSSIAN"
+		{
+			"weight"		"8"
+			"caliber"		"7.62"
+			"xarea"			"1"
+			"vmuzzle"		"838"
+			"formtype"		"BULLETFT_POINTEDFULLJACKET"
+			"shell"			"models/shells/shell_762russian.mdl"
+		}
+
+		"BULLET_545RUSSIAN"
+		{
+			"weight"		"3.5"
+			"caliber"		"5.45"
+			"xarea"			"1"
+			"vmuzzle"		"991"
+			"formtype"		"BULLETFT_POINTEDFULLJACKET"
+			"shell"			"models/shells/shell_762russian.mdl"
+		}
+
+		"BULLET_45"
+		{
+			"weight"		"13"
+			"caliber"		"11.5"
+			"vmuzzle"		"290"
+			"xarea"			"1"
+			"formtype"		"BULLETFT_ROUNDNOSELEAD"
+			"shell"			"models/shells/shell_9mm.mdl"
+		}
+
+		"BULLET_303"
+		{
+			"weight"		"11.7"
+			"caliber"		"7.69"
+			"vmuzzle"		"900"
+			"xarea"			"1"
+			"formtype"		"BULLETFT_ROUNDNOSELEAD"
+			"shell"			"models/shells/shell_762russian.mdl"
+		}
+
+		"BULLET_BUCKSHOT"
+		{
+			"weight"		"1.25"  // 3.5			"caliber"		"6"
+			"caliber"		"3.45"	// fixing missing caliber for penetration bug, since xarea is ignored		
+			"xarea"			"5"
+			"vmuzzle"		"400" 	//1000
+			"formtype"		"BULLETFT_FLATNOSELEAD"
+			"shell"			"models/shells/shell_12gauge.mdl"
+		}
+	}
+
+	GrenadeData
+	{
+		"GRENADE_M67"
+		{
+			"model"			"models/weapons/w_gren_m67.mdl"
+			"damage"		"160"
+			"damage_radius"		"9"
+			"fuse"			"3.4"
+		}
+
+		"GRENADE_M18"
+		{
+			"model"			"models/weapons/w_gren_m18.mdl"
+			"fuse"			"4"
+			"detonate_sound"	"BaseSmokeEffect.Sound"
+		}
+
+		"GRENADE_RGD5"
+		{
+			"model"			"models/weapons/w_gren_rgd5.mdl"
+			"damage"		"160"
+			"damage_radius"		"10"
+			"fuse"			"3.2"
+		}
+
+		"GRENADE_C4"
+		{
+			"model"			"models/weapons/w_c4_planted.mdl"
+			"damage"		"350"
+			"damage_radius"		"15"
+			"fuse"			"8"
+		}
+	}
+
+	MissileData
+	{
+		"MISSILE_OG7V"
+		{
+			"model"			"models/weapons/w_projectile_rpg7.mdl"
+			"damage"		"200"
+			"damage_radius"		"10"
+			"detonate_sound"	"Weapon_RPG7.Hit"
+			"safety_range"		"0"
+		}
+
+
+		"MISSILE_M406"
+		{
+			"model"			"models/weapons/w_projectile_m203.mdl"
+			"damage"		"160"
+			"damage_radius"		"9"
+			"safety_range"		"9"
+		}
+	}
+}

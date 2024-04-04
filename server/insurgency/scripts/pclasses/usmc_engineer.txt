@@ -1,0 +1,56 @@
+PlayerClassData
+{
+	"name"		"Engineer"
+	"desc"		"Engineers carry explosives that can destory caches"
+	"filename"	"engr"
+	"model"		"us_engineer"
+
+	InventoryData
+	{
+		PrimaryWeapons
+		{
+			Weapon
+			{
+				"name"		"WEAPON_M1014"
+				"clips"		"6"
+			}
+		}
+		
+		SecondaryWeapons
+		{
+			Weapon
+			{
+				"name"		"WEAPON_M9"
+				"clips"		"3"
+			}
+		}
+		Equipment
+		{
+			Weapon
+			{
+				"name"		"WEAPON_C4"
+				"count"		"3"
+
+				"locked"	"1"
+			}
+
+			Item
+			{
+				"name"		"ITEM_M67"
+				"count"		"1"
+				"default"	"1"
+			}
+			Item
+			{
+				"name"		"ITEM_M18"
+				"count"		"2"
+			}
+			
+			Item
+			{
+				"name"		"ITEM_BANDAGE"
+				"count"		"1"
+			}
+		}
+	}
+}

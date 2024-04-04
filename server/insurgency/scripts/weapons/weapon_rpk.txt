@@ -1,0 +1,42 @@
+WeaponData
+{
+	"viewmodel"			"models/weapons/v_mach_rpk47.mdl"
+	"playermodel"			"models/weapons/w_mach_rpk47.mdl"
+	
+	"anim_suffix"			"RPK"
+	
+	"clip_type"			"CLIP_RPK"
+
+	"vmuzzle"			"590"
+	"erange"			"450"
+	
+
+	"cycle_time"			"600"
+
+	"firemodes"			"5"		// FIREMODE_SEMI | FIREMODE_FULLAUTO
+	"spread_degrees"		"0.230"
+
+	"recoil_scale"			"3.5"
+	"shakiness_scale"		"0.3"
+	"ironsight_fov"			"78"
+	"freeaim_distance_scale"	"1.0"
+	"viewmodel_fov"			"68"
+
+	"weight"			"5.0"
+
+	"tracertype"			"TRACERTYPE_GREEN"
+
+	SoundData
+	{
+		"empty"				"Weapon_RPK.Empty"
+		"shot_single"			"Weapon_RPK.Single"
+		"clipin"			"Weapon_RPK.Clipin"
+		"clipout"			"Weapon_RPK.Clipout"
+		"bipod_down"			"Weapon_RPK.BipodDown"
+		"bipod_up"			"Weapon_RPK.BipodUp"
+		"bolt_pull"			"Weapon_RPK.BoltPull"
+		"ironsight"			"Weapon_RPK.Ironsight"
+	}
+
+	"ammotex"			"rpk"
+}

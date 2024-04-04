@@ -1,0 +1,132 @@
+IMCData
+{
+	"mapname" 	"Bunker"
+	"vmapname" 	"ins_bunker_b2a"
+	"theatre" 	"THEATERTYPE_IRAQ"
+	"timestamp" 	"1141794000"
+	"mapoverview"  	"Insurgents are using a bunker as their operational base, helicopters patroling the desert have found the location and radioed in requesting authorization to clear it. HQ has given the green light and is sending reinforcements, expect heavy opposition."
+	"mapncolorf" 	"IMCCOLOR_YELLOW"
+	"mapncolorb" 	"IMCCOLOR_GREEN"
+
+	TeamOne
+	{
+		"type"  	"TEAM_USMC"
+		"numwaves" 	"20"
+		"objwaves" 	"10"
+		"ewaves"	"4"
+		"timewave" 	"10"
+
+		Squads
+		{
+			"Squad"	"rifle"
+			"Squad"	"sweapons"
+		}
+	}
+
+	TeamTwo
+	{
+		"type"  	"TEAM_IRAQI"
+		"numwaves" 	"-1"
+		"ewaves"	"0"
+		"timewave" 	"25"
+
+		Squads
+		{
+			"Squad"	"rifle"
+			"Squad"	"sweapons"
+		}
+	}
+
+	ObjectiveData
+	{
+		"usmcspawn"
+		{
+			"phonetic" 	"z"
+			"color"  	"IMCCOLOR_BLACK"
+		}
+
+
+		"Almacenes"
+		{
+			"phonetic" 	"a"
+			"color" 	"IMCCOLOR_BLUE"
+		}
+
+		"SecondFloor"
+		{
+			"phonetic" 	"b"
+			"color"  	"IMCCOLOR_GREEN"
+		}
+
+
+		"Electric"
+		{
+			"phonetic" 	"c"
+			"color"  	"IMCCOLOR_GREEN"
+		}
+
+		"comedor"
+		{
+			"phonetic" 	"d"
+			"color"  	"IMCCOLOR_RED"
+		}
+
+
+	}
+
+	ProfileData
+	{
+		"Push"
+		{
+			 "gametype" 		"GAMETYPE_PUSH"
+			 "roundlength" 		"900"
+			 "capturingfallback" 	"0"
+			 "colorcorrection" 	"almaden01"
+
+			 ObjectiveData
+			 {
+				"usmcspawn"
+				{
+   					"teamstart" 	"TEAMSTART_ONE"
+					"hidden" 	"1"
+   					"mixedspawns" 	"1"
+					"startspawn"	"1"
+				}
+				
+				"Almacenes"
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"5"
+					"captime" 	"20"
+					"startspawn"	"1"
+				}
+
+				"SecondFloor"
+				{
+					"reqpercent" 	"5"
+   					"captime" 	"18"
+ 					"teamstart" 	"TEAMSTART_TWO"
+					"mixedspawns" 	"1"
+				}
+
+				"Electric"
+				{
+					"reqpercent" 	"5"
+   					"captime" 	"15"
+ 					"teamstart" 	"TEAMSTART_TWO"
+					"mixedspawns" 	"1"
+				}
+
+				"comedor"
+				{
+					"reqpercent" 	"5"
+   					"captime" 	"12"
+ 					"teamstart" 	"TEAMSTART_TWO"
+					"mixedspawns" 	"1"
+				}
+
+
+			}
+		}
+	}
+}

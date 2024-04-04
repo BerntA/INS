@@ -1,0 +1,140 @@
+IMCData
+{
+	"mapname"		"diyala"
+	"vmapname"		"ins_diyala-rc1"	
+	"theatre" 		"THEATERTYPE_IRAQ"
+	"timestamp"		"1067212800"
+	"mapoverview"		"American reporters have been taken hostage in the Diyala region near Bagdad. 
+Americans decide to prepare an operation to deliver the hostages and to destroy all ennemy units."
+	"mapncolorf"		"IMCCOLOR_YELLOW"
+	"mapncolorb"		"IMCCOLOR_GREEN"
+
+	TeamOne
+	{
+		"type"		"TEAM_USMC"
+		"numwaves"		"20"
+		"objwaves"		"2"
+		"ewaves"		"2"
+		"timewave"		"15"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	TeamTwo
+	{
+		"type"		"TEAM_IRAQI"
+		"numwaves"		"20"
+		"objwaves"		"2"
+		"ewaves"		"2"
+		"timewave"		"15"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	ObjectiveData
+	{
+		"Spawn Zone Team 1"  //id 0 		
+		{
+			"phonetic"	"d"
+			"color"		"IMCCOLOR_BLUE"
+		}
+
+		"Control Police"              //id 1 			
+		{
+			"phonetic"	"a"
+			"color"		"IMCCOLOR_RED"
+		}
+
+		"Oasis"     //id 2	 		
+		{
+			"phonetic"	"b"
+			"color"		"IMCCOLOR_BLUE"
+		}
+
+		"Mosquee"           //id 3 		
+		{
+			"phonetic"	"c"
+			"color"		"IMCCOLOR_ORANGE"
+		}
+
+                "Weapons Cache"     //id 4 		
+		{
+			"phonetic"	"d"
+			"color"		"IMCCOLOR_GREEN"
+		}
+
+		"Spawn Zone Team 2"  //id 5 			
+		{
+			"phonetic"	"e"
+			"color"		"IMCCOLOR_YELLOW"
+		}
+
+	}
+
+	ProfileData		
+	{
+		"Firefight"
+		{
+			"gametype"			"GAMETYPE_FIREFIGHT"
+			"roundlength"			"900"
+			"movingspawns"			"0"
+			"colorcorrection"		"buhriz"
+
+			ObjectiveData
+			{
+				"Spawn Zone Team 1"
+				{	
+					"teamstart"		"TEAMSTART_ONE"
+					"hidden"		"1"
+					"startspawn"	"1"
+				}
+
+				"Control Police"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"20"
+					"captime"		"15"
+				}
+
+				"Oasis"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"20"
+					"captime"		"15"
+				}
+
+				"Mosquee"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"20"
+					"captime"		"15"
+                                 
+                                }
+
+				"Weapons Cache"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"20"
+					"captime"		"15"
+
+                                }
+
+
+				"Spawn Zone Team 2"
+				{
+					"teamstart"		"TEAMSTART_TWO"
+					"hidden"		"1"
+					"startspawn"	"1"
+				}
+			}
+		}
+	}
+}

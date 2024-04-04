@@ -1,0 +1,122 @@
+IMCData
+{
+	"mapname" 	"ins_sinjar_night_b3"
+	"vmapname" 	"ins_sinjar_night_b3"
+	"theatre" 	"THEATERTYPE_IRAQ"
+	"timestamp" 	"0630592000"
+	"mapoverview"  	"Insurgents have occupied a village in the Kurdish region of Iraq. This village sits atop a hill where the Insurgents have dug in, as discovered by satellite imagery. Marines have sent a task force into the area to clear the city of enemy presence and liberate their Kurdish allies."
+	"mapncolorf" 	"IMCCOLOR_YELLOW"
+	"mapncolorb" 	"IMCCOLOR_GREEN"
+
+	TeamOne
+	{
+		"type"  	"TEAM_USMC"
+	        "numwaves" 	"-1"
+		"timewave" 	"10"
+		"objwaves" 	"5"
+		"ewaves"	"4"
+
+		Squads
+		{
+			"Squad"	"rifle"
+			"Squad"	"sweapons"
+		}
+	}
+
+	TeamTwo
+	{
+		"type"  	"TEAM_IRAQI"
+		"numwaves" 	"-1"
+		"timewave" 	"35"
+		"ewaves"	"0"
+
+		Squads
+		{
+			"Squad"	"rifle"
+			"Squad"	"sweapons"
+		}
+	}
+
+	ObjectiveData
+	{
+		"usmcspawn"  //id 0
+		{
+			"phonetic" 	"z"
+			"color"  	"IMCCOLOR_BLACK"
+		}
+
+		"Abandoned_building"  //id 1
+		{
+			"phonetic" 	"a"
+			"color" 	"IMCCOLOR_BLUE"
+		}
+
+		"Bridge_Base" //id 2
+		{
+			"phonetic" 	"b"
+			"color"  	"IMCCOLOR_GREEN"
+		}
+
+		"Village"  //id 3
+		{
+			"phonetic" 	"c"
+			"color"  	"IMCCOLOR_RED"
+		}
+
+		"Radarstation" //id 4
+		{
+			"phonetic" 	"d"
+			"color"  	"IMCCOLOR_YELLOW"
+		}
+	}
+
+	ProfileData
+	{
+		"Push"
+		{
+			 "gametype" 		"GAMETYPE_PUSH"
+			 "roundlength" 		"1200"
+			 "capturingfallback" 	"1"
+			 "colorcorrection" 	"sinjar"
+
+			 ObjectiveData
+			 {
+				"usmcspawn"
+				{
+   					"teamstart" 	"TEAMSTART_ONE"
+					"hidden" 	"1"
+					"startspawn"	"1"
+				}
+
+				"Abandoned_building"
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"15"
+					"captime" 	"15"
+					"startspawn"	"1"
+				}
+
+				"Bridge_Base"
+				{
+					"reqpercent" 	"15"
+   					"captime" 	"15"
+ 					"teamstart" 	"TEAMSTART_TWO"
+				}
+
+				"Village"
+				{
+					"reqpercent" 	"15"
+   					"captime" 	"15"
+ 					"teamstart" 	"TEAMSTART_TWO"
+				}
+
+				"Radarstation"
+				{
+					"reqpercent" 	"15"
+   					"captime" 	"15"
+ 					"teamstart" 	"TEAMSTART_TWO"
+				}
+			}
+		}
+	}
+}

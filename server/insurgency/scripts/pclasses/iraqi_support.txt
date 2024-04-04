@@ -1,0 +1,35 @@
+PlayerClassData
+{
+	"name"		"Support"
+	"desc"		"Suppor Kick Ass"
+	"filename"	"sprt"
+
+	InventoryData
+	{
+		PrimaryWeapons
+		{
+			Weapon
+			{
+				"name"		"WEAPON_RPK"
+				"clips"		"4"
+			}
+		}
+		SecondaryWeapons
+		{
+			Weapon
+			{
+				"name"		"WEAPON_MAKAROV"
+				"clips"		"2"
+			}
+		}
+		Equipment
+		{
+			Item
+			{
+				"name"		"ITEM_BANDAGE"
+				"count"		"1"
+			}
+
+		}
+	}
+}

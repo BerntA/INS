@@ -1,0 +1,14 @@
+WeaponData
+{
+	"viewmodel"			"models/weapons/v_gren_rgd5.mdl"
+	"playermodel"			"models/weapons/w_gren_m67.mdl"
+
+	"anim_suffix"			"GRENADE"
+
+	SoundData
+	{
+		"special1"	"WeaponFrag.Roll"
+	}
+
+	"ammotex"			"rgd5"
+}

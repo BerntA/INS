@@ -1,0 +1,39 @@
+WeaponData
+{
+	"viewmodel"			"models/weapons/v_snip_svd.mdl"
+	"playermodel"			"models/weapons/w_snip_svd.mdl"
+	
+	"anim_suffix"			"SKS"
+	
+	"clip_type"			"CLIP_L42A1"
+
+	"vmuzzle"			"840"
+	"erange"			"800" // 800-1000
+	
+	"cycle_time"			"170"		// RL: 700-750 that's only for full-auto
+
+	"firemodes"			"1"		// FIREMODE_SEMI
+	"spread_degrees"		"0.095"
+
+	"ironsight_fov"			"69"
+	"zoomtex_enabled"        	"1"
+	"recoil_scale"			"2.5"
+	"shakiness_scale"		"1.0"
+	"freeaim_distance_scale"	"1.0"
+
+	"weight"			"4.5"
+	"scope_fov"			"6"
+
+	SoundData
+	{
+		"shot_single"		"Weapon_SVD.Single"
+        	"empty"			"Weapon_M16A4.Empty"
+		"clipin"		"Weapon_FAL.Magin"
+		"clipout"		"Weapon_AK47.Magout"
+		"boltback"		"Weapon_SVD.Boltback"
+		"boltforward"		"Weapon_SVD.Boltforward"
+		"hit"			"Weapon_M16A4.Hit"
+	}
+
+	"ammotex"			"m14"
+}

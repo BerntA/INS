@@ -1,0 +1,39 @@
+WeaponData
+{
+	"viewmodel"		"models/weapons/v_rif_m4.mdl"
+	"playermodel"		"models/weapons/w_rif_m4.mdl"
+	"anim_suffix"		"M16"
+
+	"clip_type"		"CLIP_M16"
+
+	"vmuzzle"		"884"
+	"erange"		"450"
+
+
+	"cycle_time"		"700" // 700 - 950
+
+	"firemodes"		"5"
+	"spread_degrees"	"0.140"
+
+	"ironsight_fov"		 "72"
+	"recoil_scale"		 "2.1"
+	"shakiness_scale" 	 "0.4"
+	"freeaim_distance_scale" "1.0"
+
+	"weight"		"3.0"
+
+	"scope_fov"		"20"
+
+	SoundData
+	{
+		"empty"		"Weapon_M16A4.Empty"
+		"shot_single"	"Weapon_M4.Single"
+		"clipin"	"Weapon_M16a4.Magin"
+		"clipout"	"Weapon_M16a4.Magout"
+		"boltback"	"Weapon_M16A4.Boltback"
+		"boltforward"	"Weapon_M16A4.Boltrelease"
+		"hit"		"Weapon_M16A4.Hit"
+	}
+
+	"ammotex"		"m4"
+}

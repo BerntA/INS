@@ -1,0 +1,123 @@
+IMCData
+{
+	"mapname"		"Prison"
+	"vmapname"		"ins_prison_b1"
+	"theatre" 		"THEATERTYPE_IRAQ"
+	"timestamp"		"9000"
+	"mapoverview"		"Insurgents have taken over an abandoned prison, neutralize them immeditly "
+	"mapncolorf"		"IMCCOLOR_YELLOW"
+	"mapncolorb"		"IMCCOLOR_GREEN"
+
+	TeamOne
+	{
+		"type"		"TEAM_USMC"
+		"objwaves"	"0"
+		"numwaves"	"0"
+		"ewaves"	"0"
+		"timewave"	"20"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	TeamTwo
+	{
+		"type"		"TEAM_IRAQI"
+		"objwaves"	"0"
+		"numwaves"	"0"
+		"ewaves"	"0"
+		"timewave"	"20"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	ObjectiveData
+	{
+		"Spawn Zone USMC" 		
+		{
+			"phonetic"	"d"
+			"color"		"IMCCOLOR_BLUE"
+		}
+
+		"Zone One"
+		{
+			"phonetic"	"a"
+			"color"		"IMCCOLOR_RED"
+		}
+
+		"Zone Two"
+		{
+			"phonetic"	"b"
+			"color"		"IMCCOLOR_ORANGE"
+		}
+
+		"Zone Three"
+		{
+			"phonetic"	"c"
+			"color"		"IMCCOLOR_ORANGE"
+		}
+
+		"Spawn Zone Insurgents" 			
+		{
+			"phonetic"	"e"
+			"color"		"IMCCOLOR_YELLOW"
+		}
+
+	}
+
+	ProfileData		
+	{
+		"Firefight"
+		{
+			"gametype"			"GAMETYPE_FIREFIGHT"
+			"roundlength"			"300"
+			"movingspawns"			"0"
+			"colorcorrection"		"sinjar"
+
+			ObjectiveData
+			{
+				"Spawn Zone USMC"
+				{	
+					"teamstart"		"TEAMSTART_ONE"
+					"hidden"		"1"
+					"startspawn"		"1"
+				}
+
+ 				"Zone One"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"10"
+					"captime"	"15"
+				}
+
+				"Zone Two"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"10"
+					"captime"	"20"
+				}
+
+				"Zone Three"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"10"
+					"captime"	"20"
+				}
+
+				"Spawn Zone Insurgents"
+				{
+					"teamstart"		"TEAMSTART_TWO"
+					"hidden"		"1"
+					"startspawn"		"1"
+				}
+			}
+		}
+	}
+}

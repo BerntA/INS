@@ -1,0 +1,39 @@
+WeaponData
+{
+	"viewmodel"			"models/weapons/v_rif_sks.mdl"
+	"playermodel"			"models/weapons/w_rif_sks.mdl"
+	
+	"anim_suffix"			"SKS"
+	
+	"clip_type"			"CLIP_SKS"
+
+	"vmuzzle"			"735"
+	"erange"			"400"
+
+	"cycle_time"			"170"	// RL 40
+	"firemodes"			"1"		// FIREMODE_SEMI
+	"spread_degrees"		"0.150"
+
+	"recoil_scale"			"2.5"
+	"shakiness_scale"		"0.4"
+	"freeaim_distance_scale"	"0.5"
+
+	"ironsight_fov"			"75"
+	"viewmodel_fov"			"62"
+
+	"weight"			"3.75"
+
+	SoundData
+	{
+		"shot_single"		"Weapon_SKS.Single"
+		"empty"			"Weapon_AK47.Empty"
+		"clipin"		"Weapon_SKS.Magin"
+	        "clipout"		"Weapon_SKS.StripperOff"
+                "boltback"              "Weapon_SKS.Boltback"
+                "boltrelease"           "Weapon_SKS.Boltrelease"
+                //"rofdown"               "Weapon_AK47.ROFdown"
+                //"rofup"                 "Weapon_AK47.ROFup"
+	}
+
+	"ammotex"			"sks"
+}

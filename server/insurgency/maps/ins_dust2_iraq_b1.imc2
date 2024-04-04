@@ -1,0 +1,122 @@
+IMCData
+{	
+	"mapname"  		"dust2_iraq"	//Name of the map.
+	"theatre" 		"THEATERTYPE_IRAQ" 	//Availeble options at this time, THEATERTYPE_UNKNOWN and THEATERTYPE_CROATIA,  THEATHERTYPE_AFGHANISTAN might be future additions.
+	"vmapname"		"ins_dust2_iraq_b1"	//bsp mapname
+	"timestamp"  		"00000000"  		//More info http://soft.zoneo.net/Unixtime/index.php.
+	"mapoverview"  		"BETA BUILD	-	this is a remake of de_dust2 for Insurgeny. Its currently under development. Check out the official INSmod forum (section level design) to get more informations"
+
+	TeamOne  					//All settings for team 1.
+	{
+		"type"  	"TEAM_USMC"   		//or TEAM_Iraqi.
+		"numwaves" 	"12"			//Reinforcements per squad (a value of '-1' means unlimited reinforcements).
+		"timewave" 	"20"			//Time between reinforcements. 
+		"objwaves" 	"2"			//The amount of extra reinforcement waves a team gains by capturing this objective.
+		"ewaves" 	"2"			//The amount of emergency waves the commander gets to call.
+
+
+		Squads		
+		{
+			"Squad"	"rifle"			//The different slot types can be found in scripts/dsquads/ script files.
+			"Squad"	"sweapons"		//The different slot types can be found in scripts/dsquads/ script files.
+		}
+	}
+
+	TeamTwo  					//All settings for team 2.
+	{
+		"type"  	"TEAM_IRAQI"		//or TEAM_USMC.
+		"numwaves" 	"12"			//Reinforcements per squad (a value of '-1' means unlimited reinforcements).
+		"timewave" 	"20"			//Time between reinforcements. 
+		"objwaves" 	"2"			//The amount of extra reinforcement waves a team gains by capturing this objective.	
+		"ewaves" 	"2"			//The amount of emergency waves the commander gets to call.
+
+
+		Squads
+		{
+			"Squad"	"rifle"			//The different slot types can be found in scripts/dsquads/ script files.
+			"Squad"	"sweapons"		//The different slot types can be found in scripts/dsquads/ script files.
+		}
+	}
+
+	ObjectiveData 					//Lists all availeble objectives in this map.
+	{
+		"objective 0"	 			//objective id 0 
+		{
+			"phonetic" 	"y"		
+			"color"  	"IMCCOLOR_BLACK"
+		}
+	
+		"objective 1" 				//objective id 1
+		{
+			"phonetic" 	"a"
+			"color"  	"IMCCOLOR_YELLOW"
+		}
+
+		"objective 2" 				//objective id 2
+		{
+			"phonetic" 	"b"
+			"color"  	"IMCCOLOR_ORANGE"
+		}
+
+		"objective 3" 				//objective id 3
+		{
+			"phonetic" 	"c"
+			"color"  	"IMCCOLOR_Blue"
+		}
+
+		"objective 4" 				//objective id 4
+		{
+			"phonetic" 	"x"
+			"color"  	"IMCCOLOR_RED"
+		}	
+	}
+
+	ProfileData 					// Lists the different gamemodes for this map, only support for firefight in this example.
+	{
+		"Firefight"  				
+		{
+			"gametype" 	"GAMETYPE_FIREFIGHT"
+			"roundlength" 	"900"
+			"movingspawns"	"0"					//Firefight requirement
+
+			 ObjectiveData 						//Selection of the objectdata list thats used for this gamemode
+			 {
+				"objective 0" 					// Use the objective names you used above
+				{
+					"teamstart" 	"TEAMSTART_ONE" 	//What team controls this spawn at start.
+					"startspawn"	"1"			//This is the start objective for team 1.
+					"hidden"	"1"			//Firefight requirement for the first objective.
+				}
+
+				"objective 1" 
+				{
+					"teamstart" 	"TEAMSTART_NEUTRAL"
+					"reqpercent" 	"15"			//Percent of team players required to start a capture.
+					"captime" 	"15"			//Time in seconds to capture (capture bar resets if no players are in the capture zone.
+ 				}
+
+				"objective 2" 
+				{
+					"teamstart" 	"TEAMSTART_NEUTRAL"
+					"reqpercent" 	"15"
+					"captime" 	"15"
+				}
+
+				"objective 3" 
+				{
+					"teamstart" 	"TEAMSTART_NEUTRAL"
+					"reqpercent" 	"15"
+					"captime" 	"15"
+				}
+
+				"objective 4" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"	
+					"startspawn"	"1"			//This is the start objective for team 2.
+					"hidden"	"1"			//Firefight requirement for the last objective.
+				}
+
+			}
+		}
+	}
+}

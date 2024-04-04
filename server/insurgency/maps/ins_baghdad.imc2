@@ -1,0 +1,160 @@
+IMCData
+{
+	"mapname"		"Baghdad"
+	"theatre" 		"THEATERTYPE_IRAQ"
+	"timestamp"		"8964"
+	"mapoverview"		"The city of Baghdad is divided. The Insurgents have gone on an offensive attempting to expel the Marines from their capital city, while the USMC are fighting just as hard to secure the area and topple the statue -a symbol of the previous order- in the nearby insurgent-occupied neighborhood."
+	"mapncolorf"		"IMCCOLOR_YELLOW"
+	"mapncolorb"		"IMCCOLOR_GREEN"
+
+	TeamOne
+	{
+
+		"type"		"TEAM_IRAQI"
+		"numwaves"	"-1"
+		"timewave"	"20"
+		"ewaves"	"0"
+		"objwaves"	"0"
+
+		"name"		"12th Martyrs Brigade"
+		"briefing"	"Death to America!"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	TeamTwo
+	{
+		"type"		"TEAM_USMC"
+		"numwaves"	"-1"
+		"timewave"	"20"
+		"ewaves"	"0"
+		"objwaves"	"0"
+
+		"name"		"4th Marine Expeditionary Unit"
+		"briefing"	"Semper fi!"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+
+	}
+
+	ObjectiveData
+	{
+		
+		"Backyard1"  //id 0
+		{
+			"phonetic"	"a"
+			"color"		"IMCCOLOR_RED"
+		}
+
+
+		"Saddam Square"  //id 1
+		{
+			"phonetic"	"a"
+			"color"		"IMCCOLOR_BLACK"
+		}
+
+		"Mosque"  //id 2
+		{
+			"phonetic"	"b"
+			"color"		"IMCCOLOR_RED"
+		}
+
+		"Street"  //id 3
+		{
+			"phonetic"	"c"
+			"color"		"IMCCOLOR_GREEN"
+		}
+
+		"Petrol Station"  //id 4
+		{
+			"phonetic"	"d"
+			"color"		"IMCCOLOR_YELLOW"
+		}
+
+		"Warehouse"  //id 5
+		{
+			"phonetic"	"e"
+			"color"		"IMCCOLOR_WHITE"
+
+		}
+		"Backyard2"  //id 6
+		{
+			"phonetic"	"a"
+			"color"		"IMCCOLOR_RED"
+		}
+	}
+
+	ProfileData
+	{
+		"Battle"
+		{
+			"gametype"		"GAMETYPE_BATTLE"
+			"roundlength"		"900"
+			"colorcorrection" 	"baghdad"
+
+			ObjectiveData
+			{
+				
+				"Backyard1"
+				{
+					"teamstart"	"TEAMSTART_ONE"
+					"hidden"	"1"
+				}
+
+				"Saddam Square"
+				{
+					"teamstart"	"TEAMSTART_ONE"
+					"reqpercent"	"15"
+					"captime"	"15"
+				}
+
+				"Mosque"
+				{
+					"teamstart"	"TEAMSTART_ONE"
+					"reqpercent"	"15"
+					"captime"	"15"
+					"startspawn"	"1"
+				}
+
+
+				"Street"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"15"
+					"captime"	"15"
+					
+				}
+
+				"Petrol Station"
+				{
+					"teamstart"	"TEAMSTART_TWO"
+					"reqpercent"	"15"
+					"captime"	"15"
+					"startspawn"	"1"
+				}
+
+				"Warehouse"
+				{
+					"teamstart"	"TEAMSTART_TWO"
+					"reqpercent"	"15"
+					"captime"	"15"
+
+				}
+
+				"Backyard2"
+				{
+					"teamstart"	"TEAMSTART_TWO"
+					"hidden"	"1"
+				}
+			}
+		}
+	}
+}

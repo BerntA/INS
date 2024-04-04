@@ -1,0 +1,38 @@
+WeaponData
+{
+	"viewmodel"			"models/weapons/v_sr_l42a1.mdl"
+	"playermodel"			"models/weapons/w_sr_l42a1.mdl"
+	
+	"anim_suffix"			"SKS"
+	
+	"clip_type"			"CLIP_L42A1"
+
+	"vmuzzle"			"856"
+	"erange"			"732"
+
+
+	"firemodes"			"1"		// FIREMODE_SEMI
+	"spread_degrees"		"0.095"
+
+	"ironsight_fov"			"80"
+	"viewmodel_ironsight_fov"	"53"
+	"recoil_scale"			"2.5"
+	"shakiness_scale"		"0.5"
+	"freeaim_distance_scale"	"0.8"
+
+	"weight"			"5.8"
+	"scope_fov"			"10"
+
+	SoundData
+	{
+		"shot_single"		"Weapon_L42A1.Single"
+        	"empty"			"Weapon_L42A1.Empty"
+		"clipin"		"Weapon_L42A1.Roundin"
+		"clipout"		"Weapon_L42A1.Roundout"
+		"boltback"		"Weapon_L42A1.Boltback"
+		"boltforward"		"Weapon_L42A1.Boltforward"
+	}
+
+	"ammotex"			"l42a1"
+
+}

@@ -1,0 +1,55 @@
+PlayerClassData
+{
+	"name"		"Sapper"
+	"desc"		"Sappers Kick Ass"
+	"filename"	"sappr"
+
+	InventoryData
+	{
+		PrimaryWeapons
+		{
+			Weapon
+			{
+				"name"		"WEAPON_TOZ"
+				"clips"		"6"
+			}
+		}
+		SecondaryWeapons
+		{
+			Weapon
+			{
+				"name"		"WEAPON_MAKAROV"
+				"clips"		"3"
+			}
+		}
+		Equipment
+		{
+
+			Weapon
+			{
+				"name"		"WEAPON_C4"
+				"count"		"3"
+				"locked"	"1"
+			}
+
+			
+			Item
+			{
+				"name"		"ITEM_RGD5"
+				"count"		"1"
+			}
+
+			Item
+			{
+				"name"		"ITEM_M18"
+				"count"		"2"
+			}
+
+			Item
+			{
+				"name"		"ITEM_BANDAGE"
+				"count"		"1"
+			}
+		}
+	}
+}

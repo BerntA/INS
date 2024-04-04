@@ -1,0 +1,38 @@
+WeaponData
+{
+	"viewmodel"			"models/weapons/v_shot_m1014.mdl"
+	"playermodel"			"models/weapons/w_shot_m1014.mdl"
+	
+	"anim_suffix"			"SHOTGUN"
+	
+	"clip_type"			"CLIP_M1014"
+
+	"vmuzzle"			"350"
+	"erange"			"45"
+	"cycle_time"			"200"
+
+	
+	"firemodes"			"1"		// FIREMODE_SEMI
+	"spread_degrees"		"1.6"
+
+	"recoil_scale"			"5.0"
+	"shakiness_scale"		"0.5"
+	"freeaim_distance_scale"	"1.2"
+
+	"ironsight_fov"			"75"
+	"viewmodel_ironsight_fov"	"57"
+
+	"weight"			"3.8"
+
+	SoundData
+	{
+		"shot_single"		"Weapon_M1014.Single"
+		"bolt_back"		"Weapon_M1014.BoltBack"
+		"bolt_release"		"Weapon_M1014.BoltRelease"
+		"stock_extend"		"Weapon_M1014.StockExtend"
+		"stock_collapse"	"Weapon_M1014.StockCollapse"
+		"shell_insert"		"Weapon_M1014.ShellInsert"
+	}
+
+	"ammotex"			"m1014"
+}

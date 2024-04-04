@@ -1,0 +1,135 @@
+IMCData
+{
+	"mapname"		"Haditha"
+	"vmapname"		"ins_haditha_night"	
+	"theatre" 		"THEATERTYPE_IRAQ"
+	"timestamp"		"1067212800"
+	"mapoverview"		"Coalition Forces have moved into the city of Haditha, strategically located nearby oil fields and one of the country's largest dams. The local militia wants nothing of this, and have decided to establish a hit and run campaign against the foreign aggressors."
+	"mapncolorf"		"IMCCOLOR_YELLOW"
+	"mapncolorb"		"IMCCOLOR_GREEN"
+
+	TeamOne
+	{
+		"type"		"TEAM_USMC"
+		"numwaves"	"12"
+		"objwaves"	"2"
+		"ewaves"	"2"
+		"timewave"	"20"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	TeamTwo
+	{
+		"type"		"TEAM_IRAQI"
+		"numwaves"	"12"
+		"objwaves"	"2"
+		"ewaves"	"2"
+		"timewave"	"20"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	ObjectiveData
+	{
+		"East Zone"  //id 0
+		{
+			"phonetic"	"a"
+			"color"		"IMCCOLOR_BLUE"
+		}
+
+		"Shop"  //id 1
+		{
+			"phonetic"	"a"
+			"color"		"IMCCOLOR_RED"
+		}
+
+		"Embassy" //id 2
+		{
+			"phonetic"	"b"
+			"color"		"IMCCOLOR_BLUE"
+		}
+
+		"Garage" //id 3
+		{
+			"phonetic"	"c"
+			"color"		"IMCCOLOR_ORANGE"
+		}
+
+                "Warehouse" //id 4
+		{
+			"phonetic"	"d"
+			"color"		"IMCCOLOR_ORANGE"
+		}
+
+		"West Zone" //id 5
+		{
+			"phonetic"	"e"
+			"color"		"IMCCOLOR_BLUE"
+		}
+	}
+
+    	ProfileData
+	{
+		"Push - Iraq"
+		{
+			"gametype"		"GAMETYPE_FIREFIGHT"
+			"roundlength"		"720"
+			"movingspawns"		"0"
+			"colorcorrection" 	"haditha"
+
+			ObjectiveData
+			{
+				"East Zone"
+				{
+					"teamstart"	"TEAMSTART_ONE"
+					"hidden"	"1"
+					"startspawn"	"1"
+				}
+
+				"Shop"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"15"
+					"captime"	"15"
+				}
+
+				"Embassy"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"15"
+					"captime"	"15"
+				}
+
+                                "Garage"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"15"
+					"captime"	"15"
+				}
+
+                                "Warehouse"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"15"
+					"captime"	"15"
+				}
+
+				"West Zone"
+				{
+					"teamstart"	"TEAMSTART_TWO"
+					"hidden"	"1"
+					"startspawn"	"1"
+				}
+			}
+		}
+	}
+}

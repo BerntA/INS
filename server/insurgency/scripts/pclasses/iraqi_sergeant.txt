@@ -1,0 +1,51 @@
+PlayerClassData
+{
+	"name"		"Militant"
+	"desc"		"Militant leads other men"
+	"filename"	"riflm"
+
+	InventoryData
+	{
+		PrimaryWeapons
+		{
+
+			Weapon
+			{
+				"name"		"WEAPON_FNFAL"
+				"clips"		"6"
+			}
+			Weapon
+			{
+				"name"		"WEAPON_AKS74U"
+				"clips"		"6"
+			}			
+		}
+		SecondaryWeapons
+		{
+			Weapon
+			{
+				"name"		"WEAPON_MAKAROV"
+				"clips"		"2"
+			}
+		}
+		Equipment
+		{
+
+			Item
+			{
+				"name"		"ITEM_RGD5"
+				"count"		"2"
+			}
+			Item
+			{
+				"name"		"ITEM_M18"
+				"count"		"1"
+			}
+			Item
+			{
+				"name"		"ITEM_BANDAGE"
+				"count"		"1"
+			}
+		}
+	}
+}

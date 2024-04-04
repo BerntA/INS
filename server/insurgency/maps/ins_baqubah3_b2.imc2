@@ -1,0 +1,121 @@
+IMCData
+{
+	"mapname"		"ins_baqubah3_b2"
+	"vmapname"		"ins_baqubah3_b2"	
+	"theatre" 		"THEATERTYPE_IRAQ"
+	"timestamp"		"1067212800"
+	"mapoverview"		"A civilian convoy has gone missing while crossing the city of Abdallah in an apparent suicide attack, forcing Coalition Forces to dispatch a squad to the dangerous city's downtown, to rescue the missing civilians and restore the order."
+	"mapncolorf"		"IMCCOLOR_YELLOW"
+	"mapncolorb"		"IMCCOLOR_GREEN"
+
+	TeamOne
+	{
+		"type"		"TEAM_USMC"
+		"numwaves"	"-1"
+		"ewaves"	"2"
+		"timewave"	"20"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	TeamTwo
+	{
+		"type"		"TEAM_IRAQI"
+		"numwaves"	"-1"
+		"ewaves"	"2"
+		"timewave"	"20"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	ObjectiveData
+	{
+		"North Zone"  //id 0
+		{
+			"phonetic"	"y"
+			"color"		"IMCCOLOR_BLUE"
+		}
+
+		"Restaurant"  //id 1
+		{
+			"phonetic"	"a"
+			"color"		"IMCCOLOR_RED"
+		}
+
+		"Hideout" //id 2
+		{
+			"phonetic"	"b"
+			"color"		"IMCCOLOR_BLUE"
+		}
+
+		"Offices"  //id 3
+		{
+			"phonetic"	"c"
+			"color"		"IMCCOLOR_ORANGE"
+		}
+
+		"West Zone"  //id 4
+		{
+			"phonetic"	"z"
+			"color"		"IMCCOLOR_BLUE"
+		}
+	}
+
+    	ProfileData
+	{
+		"Firefight - Iraq"
+		{
+			"gametype"		"GAMETYPE_FIREFIGHT"
+			"roundlength"		"600"
+			"movingspawns"		"0"
+			"colorcorrection" 	"abdallah"
+			"colorcorrection" 	"abdallah02"
+
+			ObjectiveData
+			{
+				"North Zone"
+				{
+					"teamstart"	"TEAMSTART_ONE"
+					"hidden"	"1"
+					"startspawn"	"1"
+				}
+
+				"Restaurant"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"5"
+					"captime"	"20"
+				}
+
+				"Hideout"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"5"
+					"captime"	"15"
+				}
+
+                                "Offices"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"5"
+					"captime"	"20"
+				}
+
+				"West Zone"
+				{
+					"teamstart"	"TEAMSTART_TWO"
+					"hidden"	"1"
+					"startspawn"	"1"
+				}
+			}
+		}
+	}
+}

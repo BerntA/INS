@@ -1,0 +1,24 @@
+WeaponData
+{
+	"viewmodel"			"models/weapons/v_at_rpg7.mdl"
+	"playermodel"			"models/weapons/w_at_rpg7.mdl"
+
+	"anim_suffix"			"RPG"
+
+	"weight"			"6.3"
+	"ironsight_fov"			"75"
+	"shakiness_scale"		"0.2"
+	"recoil_scale"			"10.0"
+	"freeaim_distance_scale"	"0.5"
+
+	SoundData
+	{
+		"shot_single"			"Weapon_RPG7.Single"
+		"empty"				"Weapon_RPG7.Empty"
+		"load"				"Weapon_RPG7.Load"
+		"unload"			"Weapon_RPG7.Unload"
+		"hit"				"Weapon_RPG7.Hit"
+	}
+
+	"ammotex"			"rpg7"
+}

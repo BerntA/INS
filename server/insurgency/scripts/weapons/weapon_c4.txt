@@ -1,0 +1,14 @@
+WeaponData
+{
+	"viewmodel"			"models/weapons/v_dem_m112c4.mdl"
+	"playermodel"			"models/weapons/w_dem_m112c4.mdl"
+
+	"anim_suffix"			"GRENADE"
+
+	"freeaim_distance_scale"	"0.5"
+
+	SoundData
+	{
+		"knob_turn"	"Weapon_C4.Knobturn"
+	}
+}

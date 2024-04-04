@@ -1,0 +1,16 @@
+SquadData
+{
+	"name"		"Insurgent Sniper Team"
+	"description"	"The sniper team's job is to pick off long-range enemy targets in the area."
+
+	SlotData
+	{
+		"slot_two"	"Sniper"
+		"slot_three"	"Sniper"
+		"slot_four"	"Sniper"
+		"slot_five"	"Sniper"
+		"slot_six"	"Sniper"
+		"slot_seven"	"Sniper"
+		"slot_eight"	"Sniper"
+	}
+}

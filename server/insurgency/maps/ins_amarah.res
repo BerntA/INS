@@ -1,0 +1,18 @@
+"resources"
+{
+	"materials/VGUI/conflict/ins_amarah.vmt" "file"
+	"materials/VGUI/conflict/ins_amarah.vtf" "file"
+	"materials/decals/custom/cg1.vtf" "file"
+	"materials/decals/custom/cg1.vmt" "file"
+	"resource/overviews/ins_amarah.txt" "file"
+	"materials/amarahnews/amarahnews.vmt" "file"
+	"materials/amarahnews/amarahnews.vtf" "file"
+	"materials/amarahnews/esl-schrift1.vmt" "file"
+	"materials/amarahnews/esl-schrift1.vtf" "file"
+	"materials/amarahnews/esl-schrift2.vmt" "file"
+	"materials/amarahnews/esl-schrift2.vtf" "file"
+	"materials/amarahnews/esl-schriftzug4.vmt" "file"
+	"materials/amarahnews/esl-schriftzug4.vtf" "file"
+	"materials/maps/overviews/ins_amarah.vmt" "file"
+	"materials/maps/overviews/ins_amarah.vtf" "file"
+}

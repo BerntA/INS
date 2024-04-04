@@ -1,0 +1,125 @@
+IMCData
+{
+	"mapname"		"crossroads_RC1"
+	"vmapname"		"crossroads_RC1"
+	"theatre" 		"THEATERTYPE_IRAQ"
+	"timestamp"		"8964"
+	"mapoverview"		"Secure the city before the OpFor does."
+	"mapncolorf"		"IMCCOLOR_YELLOW"
+	"mapncolorb"		"IMCCOLOR_GREEN"
+
+	TeamOne
+	{
+		"type"		"TEAM_USMC"
+		"numwaves"	"12"
+		"objwaves"	"2"
+		"ewaves"	"2"
+		"timewave"	"20"
+
+		"name"		"Marines"
+		"briefing"	"Capture the city."
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	TeamTwo
+	{
+		"type"		"TEAM_IRAQI"
+		"numwaves"	"12"
+		"objwaves"	"2"
+		"ewaves"	"2"
+		"timewave"	"20"
+
+		"name"		"Insurgents"
+		"briefing"	"Capture the city."
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+
+	}
+
+	ObjectiveData
+	{
+		"Spawn Zone USMC"
+		{
+			"phonetic"	"d"
+			"color"		"IMCCOLOR_RED"
+		}
+
+		"Embassy"
+		{
+			"phonetic"	"a"
+			"color"		"IMCCOLOR_BLACK"
+		}
+
+		"Market"
+		{
+			"phonetic"	"b"
+			"color"		"IMCCOLOR_RED"
+		}
+
+		"Garage"
+		{
+			"phonetic"	"c"
+			"color"		"IMCCOLOR_GREEN"
+		}
+
+		"Spawn Zone Insurgents"
+		{
+			"phonetic"	"e"
+			"color"		"IMCCOLOR_YELLOW"
+		}
+	}
+
+	ProfileData
+	{
+		"Firefight"
+		{
+			"gametype""GAMETYPE_FIREFIGHT"
+			"roundlength""720"
+			"movingspawns""0"
+			"colorcorrection" "baghdad"
+
+			ObjectiveData
+			{
+				"Spawn Zone USMC"
+				{	
+					"teamstart"		"TEAMSTART_ONE"
+					"hidden"		"1"
+					"startspawn"		"1"
+				}
+				"Embassy"
+				{	
+					"reqpercent"	"50"
+					"captime"	"20"
+					"teamstart"	"TEAMSTART_NEUTRAL"
+				}
+				"Market"
+				{	
+					"reqpercent"	"25"
+					"captime"	"10"
+					"teamstart"	"TEAMSTART_NEUTRAL"
+				}
+				"Garage"
+				{	
+					"reqpercent"	"50"
+					"captime"	"20"
+					"teamstart"	"TEAMSTART_NEUTRAL"
+				}
+				"Spawn Zone Insurgents"
+				{
+					"teamstart"		"TEAMSTART_TWO"
+					"hidden"		"1"
+					"startspawn"		"1"
+				}
+			}
+		}
+	}
+}

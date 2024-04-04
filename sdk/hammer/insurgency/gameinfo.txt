@@ -1,0 +1,21 @@
+"GameInfo"
+{
+	game	             "INS"
+	type                 multiplayer_only
+
+	FileSystem
+	{
+		SteamAppId 17700
+		SearchPaths
+		{		
+			game+mod+game_write+mod_write+default_write_path	    |gameinfo_path|../base
+			
+			game+mod			|gameinfo_path|../../insurgency
+			game				|gameinfo_path|../../loose
+			//game				|gameinfo_path|../../loose_css
+			//game				|gameinfo_path|../../loose_custom
+			
+			platform			|gameinfo_path|../../platform
+		}
+	}
+}

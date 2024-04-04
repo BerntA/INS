@@ -1,0 +1,108 @@
+IMCData
+{	
+	"mapname"  		"Desert Glory"
+	"theatre" 		"THEATERTYPE_IRAQ"
+	"vmapname"		"ins_desert_glory"	
+	"mapoverview"	"Coalition Forces have received reports of a growing movement of resistance fighters in the city of Al-Hillah. Intelligence reports they are ready to strike. US Troops have been dispatched to investigate, and if needed, intervene to quell this uprising."
+
+	TeamOne
+	{
+		"type"  	"TEAM_USMC"
+		"numwaves" 	"5"
+		"timewave" 	"5"
+		"objwaves" 	"1"
+		"ewaves" 	"1"
+
+
+		Squads		
+		{
+			"Squad"	"rifle"			
+			"Squad"	"sweapons"		
+		}
+	}
+
+	TeamTwo  					
+	{
+		"type"  	"TEAM_IRAQI"
+		"numwaves" 	"5"
+		"timewave" 	"5"
+		"objwaves" 	"1"
+		"ewaves" 	"1"
+
+
+		Squads		
+		{
+			"Squad"	"rifle"			
+			"Squad"	"sweapons"		
+		}
+	}
+
+	ObjectiveData
+	{
+		"USMC Spawn"
+		{
+			"phonetic" 	"d"		
+			"color"  	"IMCCOLOR_RED"
+		}
+	
+		"Warehouse"
+		{
+			"phonetic" 	"a"
+			"color"  	"IMCCOLOR_YELLOW"
+		}
+
+		"Communications"
+		{
+			"phonetic" 	"b"
+			"color"  	"IMCCOLOR_ORANGE"
+		}
+
+		"IRAQI Spawn"
+		{
+			"phonetic" 	"e"
+			"color"  	"IMCCOLOR_RED"
+		}
+	}
+
+	ProfileData 					
+	{
+		"Firefight"  				
+		{
+			"gametype" 				"GAMETYPE_FIREFIGHT"
+			"roundlength" 			"900"
+			"movingspawns"			"0"
+			"colorcorrection"		"haditha"
+			
+			ObjectiveData
+			{
+				"USMC Spawn"
+				{
+					"teamstart"		"TEAMSTART_ONE"
+					"startspawn"	"1"
+					"hidden"		"1"
+				}
+				
+				"Warehouse"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"10"
+					"captime"		"60"
+				}
+
+				"Communications"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"10"
+					"captime"		"60"
+				}
+
+				"IRAQI Spawn"
+				{
+					"teamstart"		"TEAMSTART_TWO"
+					"startspawn"	"1"
+					"hidden"		"1"
+				}				
+			}
+		}
+	}
+}

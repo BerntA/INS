@@ -1,0 +1,36 @@
+PlayerClassData
+{
+	"name"		"Grenadier"
+	"desc"		"Grenadiers have explosives"
+	"filename"	"gren"
+	"model"		"us_rifleman"
+
+	InventoryData
+	{
+		PrimaryWeapons
+		{
+			Weapon
+			{
+				"name"		"WEAPON_M16M203"
+				"clips"		"6"
+				"ammocount"	"5"
+			}
+		}
+		SecondaryWeapons
+		{
+			Weapon
+			{
+				"name"		"WEAPON_M9"
+				"clips"		"3"
+			}
+		}
+		Equipment
+		{
+			Item
+			{
+				"name"		"ITEM_BANDAGE"
+				"count"		"1"
+			}
+		}
+	}
+}

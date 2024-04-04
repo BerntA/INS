@@ -1,0 +1,124 @@
+IMCData
+{
+	"mapname"		"ins_snow-bridge"
+	"vmapname"		"ins_snow-bridge"	
+	"theatre" 		"THEATERTYPE_IRAQ"
+	"timestamp"		"1067212800"
+	"mapoverview"		"Engagements between USMC and Iraqi insurgents have been fierce."
+	"mapncolorf"		"IMCCOLOR_YELLOW"
+	"mapncolorb"		"IMCCOLOR_GREEN"
+
+	TeamOne
+	{
+		"type"		"TEAM_USMC"
+		"numwaves"	"-1"
+		"objwaves"	"2"
+		"ewaves"	"2"
+		"timewave"	"20"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	TeamTwo
+	{
+		"type"		"TEAM_IRAQI"
+		"numwaves"	"-1"
+		"objwaves"	"2"
+		"ewaves"	"2"
+		"timewave"	"20"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	ObjectiveData
+	{
+		"Spawn Zone 1" 	//id 0	
+		{
+			"phonetic"	"d"
+			"color"		"IMCCOLOR_BLUE"
+		}
+
+		"Alpha"  //id 1				
+		{
+			"phonetic"	"a"
+			"color"		"IMCCOLOR_RED"
+		}
+
+		"Bravo"	  //id 2			
+		{
+			"phonetic"	"b"
+			"color"		"IMCCOLOR_BLUE"
+		}
+
+		"Charlie"  //id 3			
+		{
+			"phonetic"	"c"
+			"color"		"IMCCOLOR_ORANGE"
+		}
+
+		"Spawn Zone 2" 	  //id 4		
+		{
+			"phonetic"	"e"
+			"color"		"IMCCOLOR_YELLOW"
+		}
+
+	}
+
+	ProfileData		
+	{
+		"Firefight"
+		{
+			"gametype"			"GAMETYPE_FIREFIGHT"
+			"roundlength"			"1500"
+			"movingspawns"			"0"
+//			"colorcorrection"		"ramadifinal"
+
+			ObjectiveData
+			{
+				"Spawn Zone 1"
+				{	
+					"teamstart"	"TEAMSTART_ONE"
+					"hidden"	"1"
+					"startspawn"	"1"
+				}
+
+				"Alpha"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"15"
+					"captime"	"15"
+				}
+
+				"Bravo"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"15"
+					"captime"	"15"
+				}
+
+				"Charlie"
+				{
+					"teamstart"	"TEAMSTART_NEUTRAL"
+					"reqpercent"	"15"
+					"captime"	"15"
+				}
+
+
+				"Spawn Zone 2"
+				{
+					"teamstart"	"TEAMSTART_TWO"
+					"hidden"	"1"
+					"startspawn"	"1"
+				}
+			}
+		}
+	}
+}

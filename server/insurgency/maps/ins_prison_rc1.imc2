@@ -1,0 +1,87 @@
+IMCData
+{	
+	"mapname"  		"Prison"		//Name of the map.
+	"theatre" 		"THEATERTYPE_UNKNOWN" 	//Availeble options at this time, THEATERTYPE_UNKNOWN and THEATERTYPE_CROATIA,  THEATHERTYPE_AFGHANISTAN might be future additions.
+	"vmapname"		"ins_prison_rc1"		//bsp mapname
+	"timestamp"  		"00000000"  		//More info http://soft.zoneo.net/Unixtime/index.php.
+	"mapoverview"  		"Alpha Version for testing, Credits go to the guy who made the waterfall.  HDR & Color Correction are present.  Only A is available for capping!  Made by Evan / emetalce"
+
+	TeamOne  					//All settings for team 1.
+	{
+		"type"  	"TEAM_USMC"   		//or TEAM_Iraqi.
+		"numwaves" 	"20"			//Reinforcements per squad (a value of '-1' means unlimited reinforcements).
+		"timewave" 	"10"			//Time between reinforcements. 
+		"objwaves" 	"5"			//The amount of extra reinforcement waves a team gains by capturing this objective.
+		"ewaves" 	"3"			//The amount of emergency waves the commander gets to call.
+
+
+		Squads		
+		{
+			"Squad"	"rifle"			//The different slot types can be found in scripts/dsquads/ script files.
+			"Squad"	"sweapons"		//The different slot types can be found in scripts/dsquads/ script files.
+		}
+	}
+
+	TeamTwo  					//All settings for team 2.
+	{
+		"type"  	"TEAM_IRAQI"		//or TEAM_USMC.
+		"numwaves" 	"-1"			//Reinforcements per squad (a value of '-1' means unlimited reinforcements).
+		"timewave" 	"10"			//Time between reinforcements. 
+		"objwaves" 	"0"			//The amount of extra reinforcement waves a team gains by capturing this objective.
+		"ewaves" 	"0"			//The amount of emergency waves the commander gets to call.
+
+
+		Squads
+		{
+			"Squad"	"rifle"			//The different slot types can be found in scripts/dsquads/ script files.
+			"Squad"	"sweapons"		//The different slot types can be found in scripts/dsquads/ script files.
+		}
+	}
+
+
+	ObjectiveData 					//Lists all availeble objectives in this map.
+	{
+		"Spawn"	 			//objective id 0 
+		{
+			"phonetic" 	"y"		
+			"color"  	"IMCCOLOR_BLACK"
+		}
+	
+		"Oasis" 				//objective id 1
+		{
+			"phonetic" 	"a"
+			"color"  	"IMCCOLOR_YELLOW"
+		}
+	}
+
+	ProfileData 					// Lists the different gamemodes for this map, only support for strike in this example.
+	{
+		"Strike"  				
+		{
+			"gametype" 		"GAMETYPE_STRIKE"
+			"roundlength" 		"900"
+			"capturingfallback" 	"1"
+			"colorcorrection"	"prison"
+
+
+			 ObjectiveData 			//Selection of the objectdata list thats used for this gamemode
+			 {
+				"Spawn" 		// Use the objective names you used above
+				{
+					"teamstart" 	"TEAMSTART_ONE" 	//What team controls this spawn at start.
+					"startspawn"	"1"			//This is the start objective for team 1.
+					"hidden"	"1"			//strike requirement for the first objective.
+				}
+
+				"Oasis" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"5"			//Percent of team players required to start a capture.
+					"captime" 	"60"			//Time in seconds to capture (capture bar resets if no players are in the capture zone.
+					"startspawn"	"1"			//This is the start objective for team 2.
+					"mixedspawns"	"1"			//strike requirement for the last objective.
+ 				}
+			}
+		}
+	}
+}

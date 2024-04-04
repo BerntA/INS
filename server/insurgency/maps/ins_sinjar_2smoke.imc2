@@ -1,0 +1,137 @@
+IMCData
+{	
+	"mapname"  		"ins_sinjar_2smoke"		//Name of the map.
+	"theatre" 		"THEATERTYPE_IRAQ" 	//Available options at this time, THEATERTYPE_UNKNOWN and THEATERTYPE_CROATIA,  THEATHERTYPE_AFGHANISTAN might be future additions.
+	"vmapname"		"ins_sinjar_2smoke"		//bsp mapname
+	"timestamp"  		"00000000"  		//More info http://soft.zoneo.net/Unixtime/index.php.
+	"mapoverview"  		"Enlarged Sinjar."
+
+	TeamOne  					//All settings for team 1.
+	{
+		"type"  	"TEAM_USMC"   		//or TEAM_Iraqi.
+		"numwaves" 	"-1"			//Reinforcements per squad (a value of '-1' means unlimited reinforcements).
+		"timewave" 	"15"			//Time between reinforcements. 
+		"objwaves" 	"5"			//The amount of extra reinforcement waves a team gains by capturing this objective.
+		"ewaves" 	"3"			//The amount of emergency waves the commander gets to call.
+
+
+		Squads		
+		{
+			"Squad"	"rifle"			//The different slot types can be found in scripts/dsquads/ script files.
+			"Squad"	"sweapons"		//The different slot types can be found in scripts/dsquads/ script files.
+		}
+	}
+
+	TeamTwo  					//All settings for team 2.
+	{
+		"type"  	"TEAM_IRAQI"		//or TEAM_USMC.
+		"numwaves" 	"-1"			//Reinforcements per squad (a value of '-1' means unlimited reinforcements).
+		"timewave" 	"15"			//Time between reinforcements. 
+		"objwaves" 	"0"			//The amount of extra reinforcement waves a team gains by capturing this objective.	
+		"ewaves" 	"0"			//The amount of emergency waves the commander gets to call.
+
+
+		Squads
+		{
+			"Squad"	"rifle"			//The different slot types can be found in scripts/dsquads/ script files.
+			"Squad"	"sweapons"		//The different slot types can be found in scripts/dsquads/ script files.
+		}
+	}
+
+	ObjectiveData 					//Lists all availeble objectives in this map.
+	{
+		"usmcspawn"	 			//objective id 0 
+		{
+			"phonetic" 	"y"		
+			"color"  	"IMCCOLOR_BLACK"
+		}
+	
+		"Alpha" 				//objective id 1
+		{
+			"phonetic" 	"a"
+			"color"  	"IMCCOLOR_YELLOW"
+		}
+
+		"Bravo" 				//objective id 2
+		{
+			"phonetic" 	"b"
+			"color"  	"IMCCOLOR_ORANGE"
+		}
+
+		"Charlie" 				//objective id 3
+		{
+			"phonetic" 	"c"
+			"color"  	"IMCCOLOR_RED"
+		}
+
+		"Delta" 				//objective id 4
+		{
+			"phonetic" 	"d"
+			"color"  	"IMCCOLOR_Green"
+		}
+
+		"Echo" 				//objective id 4
+		{
+			"phonetic" 	"e"
+			"color"  	"IMCCOLOR_White"
+		} 		
+	}
+
+	ProfileData 					// Lists the different gamemodes for this map, only support for push in this example.
+	{
+		"Push"  				
+		{
+			"gametype" 	"GAMETYPE_PUSH"
+			"roundlength" 	"1800"
+			"capturingfallback" "1"
+
+			 ObjectiveData 			//Selection of the objectdata list thats used for this gamemode
+			 {
+				"usmcspawn" 		// Use the objective names you used above
+				{
+					"teamstart" 	"TEAMSTART_ONE" 	//What team controls this spawn at start.
+					"startspawn"	"1"			//This is the start objective for team 1.
+					"hidden"	"1"			//push requirement for the first objective.
+				}
+
+				"Alpha" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"5"			//Percent of team players required to start a capture.
+					"captime" 	"20"			//Time in seconds to capture (capture bar resets if no players are in the capture zone.
+					"startspawn"	"1"			//This is the start objective for team 2.
+ 				}
+
+				"Bravo" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"5"
+					"captime" 	"18"
+				}
+
+				"Charlie" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"5"
+					"captime" 	"15"
+								
+				}
+
+				"Delta" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"5"
+					"captime" 	"15"			
+				}
+				
+				"Echo" 
+				{
+					"teamstart" 	"TEAMSTART_TWO"
+					"reqpercent" 	"5"
+					"captime" 	"15"			//push requirement for the last objective.
+				}
+
+			}
+		}
+	}
+}

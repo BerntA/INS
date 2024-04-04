@@ -1,0 +1,43 @@
+PlayerClassData
+{
+	"name"		"Marksman"
+	"desc"		"Marksmen are able to enter combat at a range"
+	"filename"	"mark"
+	"model"		"us_rifleman"
+
+	InventoryData
+	{
+		PrimaryWeapons
+		{
+			Weapon
+			{
+				"name"		"WEAPON_M14"
+				"clips"		"6"
+			}
+			
+		}
+		SecondaryWeapons
+		{
+			Weapon
+			{
+				"name"		"WEAPON_M9"
+				"clips"		"3"
+
+			}
+		}
+		Equipment
+		{
+			
+			Item
+			{
+				"name"		"ITEM_M18"
+				"count"		"1"
+			}
+			Item
+			{
+				"name"		"ITEM_BANDAGE"
+				"count"		"1"
+			}
+		}
+	}
+}

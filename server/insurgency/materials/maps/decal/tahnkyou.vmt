@@ -1,0 +1,8 @@
+"lightmappedgeneric"
+{
+	"$basetexture" "maps/decal/tahnkyou"
+	"$decal" 1
+	"$translucent" 1
+	"$decalscale" 0.25
+	"%keywords" "thanks"
+}

@@ -1,0 +1,21 @@
+WeaponData
+{
+	"viewmodel"			"models/weapons/v_knife_bayonet.mdl"
+	"playermodel"			"models/weapons/w_knife_bayonet.mdl"
+
+	"anim_suffix"			"KNIFE"
+	"freeaim_distance_scale"	"0.25"
+	"viewmodel_fov"			"50"
+
+	"damage"			"50"
+
+	SoundData
+	{
+		"slash"			"Weapon_knife.Slash"
+		"shot_single"		"Weapon_Crowbar.Single"
+		"melee_hit"		"Weapon_Crowbar.Melee_Hit"
+		"melee_hit_world"	"Weapon_Crowbar.Melee_HitWorld"
+	}
+
+	"ammotex"			"knife"
+}

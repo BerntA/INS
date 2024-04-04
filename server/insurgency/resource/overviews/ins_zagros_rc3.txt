@@ -1,0 +1,9 @@
+"ins_zagros_rc3"
+{
+	"material" 	"overviews/ins_zagros_convoy"
+	"pos_x" 	"-12164"
+	"pos_y" 	"625"
+	"scale" 	"18.00"
+	"zoom"		"3.0"
+	"rotate"	"0"
+}

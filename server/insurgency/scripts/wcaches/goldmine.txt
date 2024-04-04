@@ -1,0 +1,179 @@
+WeaponCacheData
+{
+	WeaponData
+	{
+		Weapon
+		{
+			"name"		"WEAPON_M16A4"
+			"count"		"4"
+		}
+
+		Weapon
+		{
+			"name"		"WEAPON_M9"
+			"count"		"2"
+		}
+
+		Weapon
+		{
+			"name"		"WEAPON_AK47"
+			"count"		"4"
+		}
+
+		Weapon
+		{
+			"name"		"WEAPON_SKS"
+			"count"		"2"
+		}
+
+		Weapon
+		{
+			"name"		"WEAPON_TOZ"
+			"count"		"2"
+		}
+
+		Weapon
+		{
+			"name"		"WEAPON_AKS74U"
+			"count"		"3"
+		}
+
+		Weapon
+		{
+			"name"		"WEAPON_FNFAL"
+			"count"		"3"
+		}
+
+		Weapon
+		{
+			"name"		"WEAPON_MAKAROV"
+			"count"		"3"
+		}
+
+		Weapon
+		{
+			"name"		"WEAPON_L42A1"
+			"count"		"2"
+		}
+
+		Weapon
+		{
+			"name"		"WEAPON_SVD"
+			"count"		"1"
+		}
+
+		Weapon
+		{
+			"name"		"WEAPON_M14"
+			"count"		"1"
+		}
+	}
+
+	AmmoData
+	{
+		Ammo
+		{
+			"name"		"AMMO_M406"
+			"count"		"12"
+		}
+
+		Ammo
+		{
+			"name"		"AMMO_C4"
+			"count"		"4"
+		}
+
+		Ammo
+		{
+			"name"		"AMMO_OG7V"
+			"count"		"6"
+		}
+
+		Ammo
+		{
+			"name"		"AMMO_C4"
+			"count"		"8"
+		}
+	}
+
+	ClipData
+	{
+		Clip
+		{
+			"name"		"CLIP_M16"
+			"count"		"5"
+		}
+
+		Clip
+		{
+			"name"		"CLIP_M249"
+			"count"		"5"
+		}
+
+		Clip
+		{
+			"name"		"CLIP_M14"
+			"count"		"5"
+		}
+
+		Clip
+		{
+			"name"		"BOX_M1014"
+			"count"		"5"
+		}
+
+		Clip
+		{
+			"name"		"CLIP_AK47"
+			"count"		"3"
+		}
+
+		Clip
+		{
+			"name"		"CLIP_SKS"
+			"count"		"2"
+		}
+
+		Clip
+		{
+			"name"		"CLIP_AKS74U"
+			"count"		"2"
+		}
+
+		Clip
+		{
+			"name"		"CLIP_RPK"
+			"count"		"2"
+		}
+
+		Clip
+		{
+			"name"		"CLIP_UZI"
+			"count"		"2"
+		}
+
+		Clip
+		{
+			"name"		"CLIP_MAKAROV"
+			"count"		"2"
+		}
+
+		Clip
+		{
+			"name"		"CLIP_FNFAL"
+			"count"		"2"
+		}
+
+		Clip
+		{
+			"name"		"CLIP_L42A1"
+			"count"		"2"
+		}
+
+		Clip
+		{
+			"name"		"BOX_TOZ"
+			"count"		"2"
+		}
+	}
+}

@@ -1,0 +1,45 @@
+PlayerClassData
+{
+	"name"		"Rifleman"
+	"desc"		"Recruit learning the ropes"
+	"filename"	"riflm"
+
+	InventoryData
+	{
+		PrimaryWeapons
+		{
+			Weapon
+			{
+				"name"		"WEAPON_AK47"
+				"clips"		"6"
+			}
+			Weapon
+			{
+				"name"		"WEAPON_SKS"
+				"clips"		"12"
+			}
+		}
+		SecondaryWeapons
+		{
+			Weapon
+			{
+				"name"		"WEAPON_MAKAROV"
+				"clips"		"2"
+			}
+		}
+		Equipment
+		{
+			Item
+			{
+				"name"		"ITEM_RGD5"
+				"count"		"1"
+			}
+			
+			Item
+			{
+				"name"		"ITEM_BANDAGE"
+				"count"		"1"
+			}
+		}
+	}
+}

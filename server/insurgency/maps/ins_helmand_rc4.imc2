@@ -1,0 +1,132 @@
+IMCData
+{	
+	"mapname"  		"Helmand, Afghanistan"
+	"theatre" 		"THEATERTYPE_IRAQ"
+	"vmapname"		"ins_helmand_rc4"	
+	"mapoverview"	"Who can capture the Helmand province?"
+
+	TeamOne
+	{
+		"type"  	"TEAM_IRAQI"
+		"numwaves" 	"10"
+		"timewave" 	"5"
+		"objwaves" 	"3"
+		"ewaves" 	"2"
+
+		Squads		
+		{
+			"Squad"	"rifle"			
+			"Squad"	"sweapons"		
+		}
+	}
+
+	TeamTwo  					
+	{
+		"type"  	"TEAM_USMC"
+		"numwaves" 	"10"
+		"timewave" 	"5"
+		"objwaves" 	"3"
+		"ewaves" 	"2"
+
+		Squads		
+		{
+			"Squad"	"rifle"
+			"Squad"	"sweapons"		
+		}
+	}
+
+	ObjectiveData
+	{
+		"Spawn A"
+		{
+			"phonetic" 	"e"		
+			"color"  	"IMCCOLOR_BLACK"
+		}
+	
+		"Field A"
+		{
+			"phonetic" 	"a"
+			"color"  	"IMCCOLOR_YELLOW"
+		}
+
+		"Field B"
+		{
+			"phonetic" 	"b"
+			"color"  	"IMCCOLOR_ORANGE"
+		}
+		
+		"Field C"
+		{
+			"phonetic" 	"c"
+			"color"  	"IMCCOLOR_ORANGE"
+		}		
+
+		"Field D"
+		{
+			"phonetic" 	"d"
+			"color"  	"IMCCOLOR_RED"
+		}
+		
+		"Spawn B"
+		{
+			"phonetic" 	"f"
+			"color"  	"IMCCOLOR_BLACK"
+		}		
+	}
+
+	ProfileData
+	{
+		"Firefight"  				
+		{
+			"gametype" 				"GAMETYPE_FIREFIGHT"
+			"roundlength" 			"900"
+			"movingspawns"			"0"
+			"colorcorrection"		"sinjar"
+			
+			ObjectiveData
+			{
+				"Spawn A"
+				{
+					"teamstart"		"TEAMSTART_ONE"
+					"startspawn"	"1"
+					"hidden"		"1"
+				}
+
+				"Field A"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent" 	"5"
+					"captime" 		"30"
+				}
+
+				"Field B"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent" 	"5"
+					"captime" 		"30"
+				}
+				
+				"Field C"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent" 	"5"
+					"captime" 		"30"
+				}		
+
+				"Field D"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent" 	"5"
+					"captime" 		"30"
+				}	
+
+				"Spawn B"
+				{
+					"teamstart"		"TEAMSTART_TWO"
+					"startspawn"	"1"
+					"hidden"		"1"
+				}				
+			}
+		}
+	}
+}

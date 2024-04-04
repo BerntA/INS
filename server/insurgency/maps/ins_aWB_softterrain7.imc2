@@ -1,0 +1,124 @@
+IMCData
+{
+	"mapname"		"ins_aWB_softterrain7"
+	"vmapname"		"ins_aWB_softterrain7"	
+	"theatre" 		"THEATERTYPE_IRAQ"
+	"timestamp"		"1067212800"
+	"mapoverview"		"This map demonstrates the setup of 3 objectives and a spawn zone for each team for the Firefight gametype"
+	"mapncolorf"		"IMCCOLOR_YELLOW"
+	"mapncolorb"		"IMCCOLOR_GREEN"
+
+	TeamOne
+	{
+		"type"		"TEAM_USMC"
+		"numwaves"		"-1"
+		"objwaves"		"2"
+		"ewaves"		"2"
+		"timewave"		"10"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	TeamTwo
+	{
+		"type"		"TEAM_IRAQI"
+		"numwaves"		"-1"
+		"objwaves"		"2"
+		"ewaves"		"2"
+		"timewave"		"10"
+
+		Squads
+		{
+			"Squad"		"rifle"
+			"Squad"		"sweapons"
+		}
+	}
+
+	ObjectiveData
+	{
+		"Spawn Zone Team 1" 		
+		{
+			"phonetic"	"d"
+			"color"		"IMCCOLOR_BLUE"
+		}
+
+		"Objective Alpha" 			
+		{
+			"phonetic"	"a"
+			"color"		"IMCCOLOR_RED"
+		}
+
+		"Objective Bravo"	 		
+		{
+			"phonetic"	"b"
+			"color"		"IMCCOLOR_BLUE"
+		}
+
+		"Objective Charlie" 		
+		{
+			"phonetic"	"c"
+			"color"		"IMCCOLOR_ORANGE"
+		}
+
+		"Spawn Zone Team 2" 			
+		{
+			"phonetic"	"e"
+			"color"		"IMCCOLOR_YELLOW"
+		}
+
+	}
+
+	ProfileData		
+	{
+		"Firefight"
+		{
+			"gametype"			"GAMETYPE_FIREFIGHT"
+			"roundlength"			"900"
+			"movingspawns"			"0"
+			"colorcorrection"		"ramadifinal"
+
+			ObjectiveData
+			{
+				"Spawn Zone Team 1"
+				{	
+					"teamstart"		"TEAMSTART_ONE"
+					"hidden"		"1"
+					"startspawn"	"1"
+				}
+
+				"Objective Alpha"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"20"
+					"captime"		"15"
+				}
+
+				"Objective Bravo"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"20"
+					"captime"		"15"
+				}
+
+				"Objective Charlie"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"20"
+					"captime"		"15"
+				}
+
+
+				"Spawn Zone Team 2"
+				{
+					"teamstart"		"TEAMSTART_TWO"
+					"hidden"		"1"
+					"startspawn"	"1"
+				}
+			}
+		}
+	}
+}

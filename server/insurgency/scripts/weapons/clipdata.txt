@@ -1,0 +1,111 @@
+ClipDef
+{
+	"CLIP_M16"
+	{
+		"weapon"	"WEAPONTYPE_PRIMARY"
+		"bullet"	"BULLET_556NATO"
+		"size"		"30"
+	}
+
+	"CLIP_M16M203"
+	{
+		"weapon"	"WEAPONTYPE_PRIMARY"
+		"bullet"	"BULLET_556NATO"
+		"size"		"30"
+	}
+
+	"CLIP_M9"
+	{
+		"weapon"	"WEAPONTYPE_SECONDARY"
+		"bullet"	"BULLET_9MMNATO"
+		"size"		"15"
+	}
+
+	"CLIP_M14"
+	{
+		"weapon"	"WEAPONTYPE_PRIMARY"
+		"bullet"	"BULLET_762NATO"
+		"size"		"20"
+	}
+
+	"CLIP_M249"
+	{
+		"weapon"	"WEAPONTYPE_PRIMARY"
+		"bullet"	"BULLET_556NATO"
+		"size"		"200"
+	}
+	"CLIP_AK47"
+	{
+		"weapon"	"WEAPONTYPE_PRIMARY"
+		"bullet"	"BULLET_762RUSSIAN"
+		"size"		"30"
+	}
+	"CLIP_AK74"
+	{
+		"weapon"	"WEAPONTYPE_PRIMARY"
+		"bullet"	"BULLET_545RUSSIAN"
+		"size"		"30"
+	}
+	"CLIP_SKS"
+	{
+		"weapon"	"WEAPONTYPE_PRIMARY"
+		"bullet"	"BULLET_762RUSSIAN"
+		"size"		"10"
+	}
+
+	"CLIP_RPK"
+	{
+		"weapon"	"WEAPONTYPE_PRIMARY"
+		"bullet"	"BULLET_762RUSSIAN"
+		"size"		"75"
+	}
+
+	"CLIP_UZI"
+	{
+		"weapon"	"WEAPONTYPE_PRIMARY"
+		"bullet"	"BULLET_556NATO"
+		"size"		"32"
+	}
+
+	"CLIP_MAKAROV"
+	{
+		"weapon"	"WEAPONTYPE_SECONDARY"
+		"bullet"	"BULLET_9MMNATO"
+		"size"		"10"
+	}
+
+	"CLIP_FNFAL"
+	{
+		"weapon"	"WEAPONTYPE_PRIMARY"
+		"bullet"	"BULLET_762NATO"
+		"size"		"20"
+	}
+
+	"CLIP_L42A1"
+	{
+		"weapon"	"WEAPONTYPE_PRIMARY"
+		"bullet"	"BULLET_303"
+		"size"		"10"
+	}
+
+	"CLIP_M1014"
+	{
+		"weapon"	"WEAPONTYPE_PRIMARY"
+		"bullet"	"BULLET_BUCKSHOT"
+		"size"		"7"
+	}
+
+	"CLIP_TOZ"
+	{
+		"weapon"	"WEAPONTYPE_PRIMARY"
+		"bullet"	"BULLET_BUCKSHOT"
+		"size"		"6"
+	}
+
+	"CLIP_1911"
+	{
+		"weapon"	"WEAPONTYPE_SECONDARY"
+		"bullet"	"BULLET_45"
+		"size"		"7"
+	}
+}
