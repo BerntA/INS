@@ -197,32 +197,37 @@
 
 @BaseClass color(0 0 200) base(Targetname, Angles, Origin) = Weapon
 [
+	spawnflags(Flags) =
+	[
+		1073741824 : "No Respawn" : 0
+	]
+
 	output OnPlayerUse(void) : "Fires when the player +uses this weapon"
 	output OnPlayerPickup(void) : "Fires when the player picks up this weapon"
 ]
 
-@PointClass base(Weapon) studio("models/weapons/w_pist_1911.mdl") = weapon_1911 : "1911" []
-@PointClass base(Weapon) studio("models/weapons/w_rif_ak47.mdl") = weapon_ak47 : "AK47" []
-@PointClass base(Weapon) studio("models/weapons/w_rif_aks74u.mdl") = weapon_aks74u : "AKS 74u" []
-@PointClass base(Weapon) studio("models/weapons/w_rif_fnfal.mdl") = weapon_fnfal : "FN-FAL" []
-@PointClass base(Weapon) studio("models/weapons/w_sr_l42a1.mdl") = weapon_l42a1 : "L42A1" []
-@PointClass base(Weapon) studio("models/weapons/w_rif_m4.mdl") = weapon_m4 : "M4" []
-@PointClass base(Weapon) studio("models/weapons/w_rif_m4med.mdl") = weapon_m4med : "M4 AIM POINT" []
-@PointClass base(Weapon) studio("models/weapons/w_pist_m9.mdl") = weapon_m9 : "M9" []
-@PointClass base(Weapon) studio("models/weapons/w_sr_m14.mdl") = weapon_m14 : "M14" []
-@PointClass base(Weapon) studio("models/weapons/w_rif_m16a4.mdl") = weapon_m16a4 : "M16A4" []
-@PointClass base(Weapon) studio("models/weapons/w_rif_m16m203.mdl") = weapon_m16m203 : "M16M203" []
-@PointClass base(Weapon) studio("models/weapons/w_gren_m18.mdl") = weapon_m18 : "M18" []
-@PointClass base(Weapon) studio("models/weapons/w_gren_m67.mdl") = weapon_m67 : "M67" []
-@PointClass base(Weapon) studio("models/weapons/w_mach_m249.mdl") = weapon_m249 : "M249" []
-@PointClass base(Weapon) studio("models/weapons/w_shot_m1014.mdl") = weapon_m1014 : "M1014" []
-@PointClass base(Weapon) studio("models/weapons/w_pist_makarov.mdl") = weapon_makarov : "MAKAROV" []
-@PointClass base(Weapon) studio("models/weapons/w_gren_m67.mdl") = weapon_rgd5 : "RGD5" []
-@PointClass base(Weapon) studio("models/weapons/w_at_rpg7.mdl") = weapon_rpg7 : "RPG-7" []
-@PointClass base(Weapon) studio("models/weapons/w_mach_rpk47.mdl") = weapon_rpk : "RPK" []
-@PointClass base(Weapon) studio("models/weapons/w_rif_sks.mdl") = weapon_sks : "SKS" []
-@PointClass base(Weapon) studio("models/weapons/w_snip_svd.mdl") = weapon_svd : "SVD" []
-@PointClass base(Weapon) studio("models/weapons/w_shot_toz.mdl") = weapon_toz : "TOZ" []
+@PointClass base(Weapon) studioprop("models/weapons/w_pist_1911.mdl") = weapon_1911 : "1911" []
+@PointClass base(Weapon) studioprop("models/weapons/w_rif_ak47.mdl") = weapon_ak47 : "AK47" []
+@PointClass base(Weapon) studioprop("models/weapons/w_rif_aks74u.mdl") = weapon_aks74u : "AKS 74u" []
+@PointClass base(Weapon) studioprop("models/weapons/w_rif_fnfal.mdl") = weapon_fnfal : "FN-FAL" []
+@PointClass base(Weapon) studioprop("models/weapons/w_sr_l42a1.mdl") = weapon_l42a1 : "L42A1" []
+@PointClass base(Weapon) studioprop("models/weapons/w_rif_m4.mdl") = weapon_m4 : "M4" []
+@PointClass base(Weapon) studioprop("models/weapons/w_rif_m4med.mdl") = weapon_m4med : "M4 AIM POINT" []
+@PointClass base(Weapon) studioprop("models/weapons/w_pist_m9.mdl") = weapon_m9 : "M9" []
+@PointClass base(Weapon) studioprop("models/weapons/w_sr_m14.mdl") = weapon_m14 : "M14" []
+@PointClass base(Weapon) studioprop("models/weapons/w_rif_m16a4.mdl") = weapon_m16a4 : "M16A4" []
+@PointClass base(Weapon) studioprop("models/weapons/w_rif_m16m203.mdl") = weapon_m16m203 : "M16M203" []
+@PointClass base(Weapon) studioprop("models/weapons/w_gren_m18.mdl") = weapon_m18 : "M18" []
+@PointClass base(Weapon) studioprop("models/weapons/w_gren_m67.mdl") = weapon_m67 : "M67" []
+@PointClass base(Weapon) studioprop("models/weapons/w_mach_m249.mdl") = weapon_m249 : "M249" []
+@PointClass base(Weapon) studioprop("models/weapons/w_shot_m1014.mdl") = weapon_m1014 : "M1014" []
+@PointClass base(Weapon) studioprop("models/weapons/w_pist_makarov.mdl") = weapon_makarov : "MAKAROV" []
+@PointClass base(Weapon) studioprop("models/weapons/w_gren_m67.mdl") = weapon_rgd5 : "RGD5" []
+@PointClass base(Weapon) studioprop("models/weapons/w_at_rpg7.mdl") = weapon_rpg7 : "RPG-7" []
+@PointClass base(Weapon) studioprop("models/weapons/w_mach_rpk47.mdl") = weapon_rpk : "RPK" []
+@PointClass base(Weapon) studioprop("models/weapons/w_rif_sks.mdl") = weapon_sks : "SKS" []
+@PointClass base(Weapon) studioprop("models/weapons/w_snip_svd.mdl") = weapon_svd : "SVD" []
+@PointClass base(Weapon) studioprop("models/weapons/w_shot_toz.mdl") = weapon_toz : "TOZ" []
 
 // HL2
 

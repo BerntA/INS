@@ -4,7 +4,7 @@
 	{
 		"INS"
 		{
-			"GameDir"		"../insurgency"
+			"GameDir"		"<PATH HERE>/insurgency"
 			"Hammer"
 			{
 				"GameData0"		"fgd/insurgency.fgd"
@@ -12,15 +12,15 @@
 				"MapFormat"		"4"
 				"DefaultTextureScale"		"0.250000"
 				"DefaultLightmapScale"		"16"
-				"GameExe"		"../../hl2.exe"
+				"GameExe"		"<PATH HERE>/hl2.exe"
 				"DefaultSolidEntity"		"func_detail"
 				"DefaultPointEntity"		"prop_static"
 				"BSP"		"<PATH HERE>/legacy/ep1/bin/vbsp.exe"
 				"Vis"		"<PATH HERE>/legacy/ep1/bin/vvis.exe"
 				"Light"		"<PATH HERE>/legacy/ep1/bin/vrad.exe"
 				"GameExeDir"		"../.."
-				"MapDir"		"../insurgency/mapsrc"
-				"BSPDir"		"../../insurgency/maps"
+				"MapDir"		"<PATH HERE>/mapsrc"
+				"BSPDir"		"<PATH HERE>/maps"
 				"PrefabDir"		"prefabs"
 				"CordonTexture"		"tools/toolsskybox"
 				"MaterialExcludeCount"		"0"
