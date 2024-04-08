@@ -1,0 +1,119 @@
+IMCData
+{	
+	"mapname"  		"ins_bond_japan"
+	"vmapname"		"ins_bond_japan"
+	"theatre" 		"THEATERTYPE_IRAQ"
+	"mapoverview"	"NIGHTFIRE: Japan!"
+
+	TeamOne
+	{
+		"type"  	"TEAM_USMC"
+		"numwaves" 	"10"
+		"timewave" 	"5"
+		"objwaves" 	"2"
+		"ewaves" 	"1"
+
+		Squads		
+		{
+			"Squad"	"rifle"			
+			"Squad"	"sweapons"		
+		}
+	}
+
+	TeamTwo  					
+	{
+		"type"  	"TEAM_IRAQI"
+		"numwaves" 	"10"
+		"timewave" 	"5"
+		"objwaves" 	"2"
+		"ewaves" 	"1"
+
+		Squads		
+		{
+			"Squad"	"rifle"			
+			"Squad"	"sweapons"		
+		}
+	}
+
+	ObjectiveData
+	{
+		"USMC Spawn"
+		{
+			"phonetic" 	"d"		
+			"color"  	"IMCCOLOR_RED"
+		}
+	
+		"USMC Base"
+		{
+			"phonetic" 	"a"
+			"color"  	"IMCCOLOR_YELLOW"
+		}
+
+		"Baths"
+		{
+			"phonetic" 	"b"
+			"color"  	"IMCCOLOR_ORANGE"
+		}
+
+		"IRAQI Base"
+		{
+			"phonetic" 	"c"
+			"color"  	"IMCCOLOR_BLUE"
+		}	
+		
+		"IRAQI Spawn"
+		{
+			"phonetic" 	"e"
+			"color"  	"IMCCOLOR_RED"
+		}
+	}
+
+	ProfileData 					
+	{
+		"Firefight"  				
+		{
+			"gametype" 				"GAMETYPE_FIREFIGHT"
+			"roundlength" 			"900"
+			"movingspawns"			"0"
+			"colorcorrection"		"ramadifinal"
+			
+			ObjectiveData
+			{
+				"USMC Spawn"
+				{
+					"teamstart"		"TEAMSTART_ONE"
+					"startspawn"	"1"
+					"hidden"		"1"
+				}
+				
+				"USMC Base"
+				{
+					"teamstart"		"TEAMSTART_ONE"
+					"reqpercent"	"20"
+					"captime"		"60"
+				}
+
+				"Baths"
+				{
+					"teamstart"		"TEAMSTART_NEUTRAL"
+					"reqpercent"	"10"
+					"captime"		"35"
+				}	
+				
+				"IRAQI Base"
+				{
+					"teamstart"		"TEAMSTART_TWO"
+					"reqpercent"	"20"
+					"captime"		"60"
+				}
+
+				"IRAQI Spawn"
+				{
+					"teamstart"		"TEAMSTART_TWO"
+					"startspawn"	"1"
+					"hidden"		"1"
+				}				
+			}
+		}
+	}
+}

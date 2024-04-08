@@ -1,0 +1,81 @@
+IMCData
+{	
+	"mapname"  		"ins_bond_jungle"
+	"vmapname"		"ins_bond_jungle"
+	"theatre" 		"THEATERTYPE_IRAQ"
+	"mapoverview"	"NIGHTFIRE: Jungle!"
+
+	TeamOne
+	{
+		"type"  	"TEAM_USMC"
+		"numwaves" 	"5"
+		"timewave" 	"8"
+		"objwaves" 	"0"
+		"ewaves" 	"3"
+
+		Squads		
+		{
+			"Squad"	"rifle"			
+			"Squad"	"sweapons"		
+		}
+	}
+
+	TeamTwo
+	{
+		"type"  	"TEAM_IRAQI"
+		"numwaves" 	"-1"
+		"timewave" 	"5"
+		"objwaves" 	"0"
+		"ewaves" 	"0"
+
+		Squads		
+		{
+			"Squad"	"rifle"			
+			"Squad"	"sweapons"		
+		}
+	}
+
+	ObjectiveData
+	{
+		"USMC Spawn"
+		{
+			"phonetic" 	"b"		
+			"color"  	"IMCCOLOR_BLUE"
+		}
+
+		"IRAQI Compound"
+		{
+			"phonetic" 	"a"
+			"color"  	"IMCCOLOR_RED"
+		}	
+	}
+
+	ProfileData 					
+	{
+		"Strike"  				
+		{
+			"gametype" 				"GAMETYPE_STRIKE"
+			"roundlength" 			"900"
+			"capturingfallback" 	"1"
+			
+			ObjectiveData
+			{
+				"USMC Spawn"
+				{
+					"teamstart"		"TEAMSTART_ONE"
+					"startspawn"	"1"
+					"hidden"		"1"
+				}
+				
+				"IRAQI Compound"
+				{
+					"teamstart"		"TEAMSTART_TWO"
+					"reqpercent"	"10"
+					"captime"		"90"
+					"startspawn"	"1"
+					"mixedspawns"	"1"
+				}			
+			}
+		}
+	}
+}
